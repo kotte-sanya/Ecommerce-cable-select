@@ -1,5 +1,5 @@
 var cableData = {
-  "devices":[
+  "connectorA":[
     {
       "type": "camera",
       "Manufacturer": "canon",
@@ -280,7 +280,7 @@ var cableData = {
     {
       "type": "camera",
       "Manufacturer": "Arri",
-      "Product": "Arriflex",
+      "Product": "435 ES",
       "Connector": [
         {
           "type": "Connector",
@@ -293,6 +293,19 @@ var cableData = {
           "model": "24v 3 Pin Fischer",
           "Straight": 0,
           "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "camera",
+      "Manufacturer": "Arri",
+      "Product": "416",
+      "Connector": [
+        {
+          "type": "Connector",
+          "model": "2 Pin Fischer (for Arri)",
+          "Straight": 100,
+          "Angled": 120
         }
       ]
     },
@@ -544,6 +557,803 @@ var cableData = {
       ]
     },
     {
+      "type": "camera",
+      "Manufacturer": "Sony",
+      "Product": "PXW-Z750",
+      "Connector": [
+        {
+          "type": "Connector",
+          "model": "4 Pin XLR Female",
+          "Straight": 10,
+          "Angled": 15
+        },
+        {
+          "type": "Power Output 1",
+          "model": "4 Pin Hirose",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "camera",
+      "Manufacturer": "Sony",
+      "Product": "PXW-Z450",
+      "Connector": [
+        {
+          "type": "Connector",
+          "model": "4 Pin XLR Female",
+          "Straight": 10,
+          "Angled": 15
+        },
+        {
+          "type": "Power Output 1",
+          "model": "4 Pin Hirose",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "camera",
+      "Manufacturer": "Sony",
+      "Product": "PXW-X400",
+      "Connector": [
+        {
+          "type": "Connector",
+          "model": "4 Pin XLR Female",
+          "Straight": 10,
+          "Angled": 15
+        },
+        {
+          "type": "Power Output 1",
+          "model": "4 Pin Hirose",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "camera",
+      "Manufacturer": "Sony",
+      "Product": "PXW-X320",
+      "Connector": [
+        {
+          "type": "Connector",
+          "model": "4 Pin XLR Female",
+          "Straight": 10,
+          "Angled": 15
+        },
+        {
+          "type": "Power Output 1",
+          "model": "4 Pin Hirose",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "camera",
+      "Manufacturer": "Sony",
+      "Product": "PDW-850",
+      "Connector": [
+        {
+          "type": "Connector",
+          "model": "4 Pin XLR Female",
+          "Straight": 10,
+          "Angled": 15
+        },
+        {
+          "type": "Power Output 1",
+          "model": "4 Pin Hirose",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "camera",
+      "Manufacturer": "Sony",
+      "Product": "HXR-MC2500",
+      "Connector": [
+        {
+          "type": "Connector",
+          "model": "Sony Battery Eliminator",
+          "Straight": 40,
+          "Angled": 'N/A'
+        }
+      ]
+    },
+    {
+      "type": "camera",
+      "Manufacturer": "Sony",
+      "Product": "PXW-X500",
+      "Connector": [
+        {
+          "type": "Connector",
+          "model": "4 Pin XLR Female",
+          "Straight": 10,
+          "Angled": 15
+        },
+        {
+          "type": "Power Output 1",
+          "model": "4 Pin Hirose",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "camera",
+      "Manufacturer": "Sony",
+      "Product": "PDW-680",
+      "Connector": [
+        {
+          "type": "Connector",
+          "model": "4 Pin XLR Female",
+          "Straight": 10,
+          "Angled": 15
+        },
+        {
+          "type": "Power Output 1",
+          "model": "4 Pin Hirose",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "camera",
+      "Manufacturer": "Sony",
+      "Product": "PXW-FX9",
+      "Connector": [
+        {
+          "type": "Connector",
+          "model": "Sony Battery Eliminator",
+          "Straight": 40,
+          "Angled": 'N/A'
+        }
+      ]
+    },
+    {
+      "type": "camera",
+      "Manufacturer": "Sony",
+      "Product": "PXW-FX9 with XDCA-FX9 Extension Unit",
+      "Connector": [
+        {
+          "type": "Connector",
+          "model": "4 Pin XLR Female",
+          "Straight": 10,
+          "Angled": 15
+        },
+        {
+          "type": "Power Output 1",
+          "model": "4 Pin Hirose",
+          "Straight": 0,
+          "Angled": 0
+        },
+        {
+          "type": "Power Output 2",
+          "model": "D-Tap",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "camera",
+      "Manufacturer": "Sony",
+      "Product": "PXW-FS7",
+      "Connector": [
+        {
+          "type": "Connector",
+          "model": "Sony Battery Eliminator",
+          "Straight": 40,
+          "Angled": 'N/A'
+        }
+      ]
+    },
+    {
+      "type": "camera",
+      "Manufacturer": "Sony",
+      "Product": "PXW-FS7 with XDCA-FS7 Extension Unit",
+      "Connector": [
+        {
+          "type": "Connector",
+          "model": "4 Pin XLR Female",
+          "Straight": 10,
+          "Angled": 15
+        }
+      ]
+    },
+    {
+      "type": "camera",
+      "Manufacturer": "Sony",
+      "Product": "PXW-FS5",
+      "Connector": [
+        {
+          "type": "Connector",
+          "model": "Sony Battery Eliminator",
+          "Straight": 40,
+          "Angled": 'N/A'
+        }
+      ]
+    },
+    {
+      "type": "camera",
+      "Manufacturer": "Sony",
+      "Product": "PXW-Z280",
+      "Connector": [
+        {
+          "type": "Connector",
+          "model": "Sony Battery Eliminator",
+          "Straight": 40,
+          "Angled": 'N/A'
+        }
+      ]
+    },
+    {
+      "type": "camera",
+      "Manufacturer": "Sony",
+      "Product": "HDC-P50",
+      "Connector": [
+        {
+          "type": "Connector",
+          "model": "4 Pin XLR Female",
+          "Straight": 10,
+          "Angled": 15
+        }
+      ]
+    },
+    {
+      "type": "camera",
+      "Manufacturer": "Sony",
+      "Product": "HDC-P1",
+      "Connector": [
+        {
+          "type": "Connector",
+          "model": "4 Pin XLR Female",
+          "Straight": 10,
+          "Angled": 15
+        }
+      ]
+    },
+    {
+      "type": "camera",
+      "Manufacturer": "Sony",
+      "Product": "HDC-P31",
+      "Connector": [
+        {
+          "type": "Connector",
+          "model": "4 Pin XLR Female",
+          "Straight": 10,
+          "Angled": 15
+        }
+      ]
+    },
+    {
+      "type": "camera",
+      "Manufacturer": "Sony",
+      "Product": "HDC-P43",
+      "Connector": [
+        {
+          "type": "Connector",
+          "model": "4 Pin XLR Female",
+          "Straight": 10,
+          "Angled": 15
+        }
+      ]
+    },
+    {
+      "type": "camera",
+      "Manufacturer": "Sony",
+      "Product": "HDC-P70",
+      "Connector": [
+        {
+          "type": "Connector",
+          "model": "4 Pin XLR Female",
+          "Straight": 10,
+          "Angled": 15
+        }
+      ]
+    },
+    {
+      "type": "camera",
+      "Manufacturer": "Sony",
+      "Product": "HDC-5500",
+      "Connector": [
+        {
+          "type": "Connector",
+          "model": "4 Pin XLR Female",
+          "Straight": 10,
+          "Angled": 15
+        },
+        {
+          "type": "Power Output 1",
+          "model": "4 Pin Hirose",
+          "Straight": 0,
+          "Angled": 0
+        },
+        {
+          "type": "Power Output 2",
+          "model": "D-Tap",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "camera",
+      "Manufacturer": "Sony",
+      "Product": "HDC-3500",
+      "Connector": [
+        {
+          "type": "Connector",
+          "model": "4 Pin XLR Female",
+          "Straight": 10,
+          "Angled": 15
+        },
+        {
+          "type": "Power Output 1",
+          "model": "4 Pin Hirose",
+          "Straight": 0,
+          "Angled": 0
+        },
+        {
+          "type": "Power Output 2",
+          "model": "D-Tap",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "camera",
+      "Manufacturer": "Sony",
+      "Product": "HDC-3100",
+      "Connector": [
+        {
+          "type": "Connector",
+          "model": "4 Pin XLR Female",
+          "Straight": 10,
+          "Angled": 15
+        },
+        {
+          "type": "Power Output 1",
+          "model": "4 Pin Hirose",
+          "Straight": 0,
+          "Angled": 0
+        },
+        {
+          "type": "Power Output 2",
+          "model": "D-Tap",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "camera",
+      "Manufacturer": "Sony",
+      "Product": "HDC-3170",
+      "Connector": [
+        {
+          "type": "Connector",
+          "model": "4 Pin XLR Female",
+          "Straight": 10,
+          "Angled": 15
+        },
+        {
+          "type": "Power Output 1",
+          "model": "4 Pin Hirose",
+          "Straight": 0,
+          "Angled": 0
+        },
+        {
+          "type": "Power Output 2",
+          "model": "D-Tap",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "camera",
+      "Manufacturer": "Sony",
+      "Product": "HDC-4800",
+      "Connector": [
+        {
+          "type": "Connector",
+          "model": "4 Pin XLR Female",
+          "Straight": 10,
+          "Angled": 15
+        },
+        {
+          "type": "Power Output 1",
+          "model": "4 Pin Hirose",
+          "Straight": 0,
+          "Angled": 0
+        },
+        {
+          "type": "Power Output 2",
+          "model": "D-Tap",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "camera",
+      "Manufacturer": "Sony",
+      "Product": "HDC-4300",
+      "Connector": [
+        {
+          "type": "Connector",
+          "model": "4 Pin XLR Female",
+          "Straight": 10,
+          "Angled": 15
+        },
+        {
+          "type": "Power Output 1",
+          "model": "4 Pin Hirose",
+          "Straight": 0,
+          "Angled": 0
+        },
+        {
+          "type": "Power Output 2",
+          "model": "D-Tap",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "camera",
+      "Manufacturer": "Sony",
+      "Product": "HDC-2500",
+      "Connector": [
+        {
+          "type": "Connector",
+          "model": "4 Pin XLR Female",
+          "Straight": 10,
+          "Angled": 15
+        },
+        {
+          "type": "Power Output 1",
+          "model": "4 Pin Hirose",
+          "Straight": 0,
+          "Angled": 0
+        },
+        {
+          "type": "Power Output 2",
+          "model": "D-Tap",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "camera",
+      "Manufacturer": "Sony",
+      "Product": "HDC-2570",
+      "Connector": [
+        {
+          "type": "Connector",
+          "model": "4 Pin XLR Female",
+          "Straight": 10,
+          "Angled": 15
+        },
+        {
+          "type": "Power Output 1",
+          "model": "4 Pin Hirose",
+          "Straight": 0,
+          "Angled": 0
+        },
+        {
+          "type": "Power Output 2",
+          "model": "D-Tap",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "camera",
+      "Manufacturer": "Sony",
+      "Product": "HDC-2400",
+      "Connector": [
+        {
+          "type": "Connector",
+          "model": "4 Pin XLR Female",
+          "Straight": 10,
+          "Angled": 15
+        },
+        {
+          "type": "Power Output 1",
+          "model": "4 Pin Hirose",
+          "Straight": 0,
+          "Angled": 0
+        },
+        {
+          "type": "Power Output 2",
+          "model": "D-Tap",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "camera",
+      "Manufacturer": "Sony",
+      "Product": "UHC-8300",
+      "Connector": [
+        {
+          "type": "Connector",
+          "model": "4 Pin XLR Female",
+          "Straight": 10,
+          "Angled": 15
+        },
+        {
+          "type": "Power Output 1",
+          "model": "4 Pin Hirose",
+          "Straight": 0,
+          "Angled": 0
+        },
+        {
+          "type": "Power Output 2",
+          "model": "D-Tap",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "camera",
+      "Manufacturer": "Blackmagic",
+      "Product": "Blackmagic URSA",
+      "Connector": [
+        {
+          "type": "Connector",
+          "model": "4 Pin XLR Female",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "camera",
+      "Manufacturer": "Blackmagic",
+      "Product": "Blackmagic URSA Mini",
+      "Connector": [
+        {
+          "type": "Connector",
+          "model": "4 Pin XLR Female",
+          "Straight": 10,
+          "Angled": 15
+        },
+        {
+          "type": "Power Output 1",
+          "model": "4 Pin XLR Male",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "camera",
+      "Manufacturer": "Blackmagic",
+      "Product": "Blackmagic Studio Camera",
+      "Connector": [
+        {
+          "type": "Connector",
+          "model": "4 Pin XLR Female",
+          "Straight": 10,
+          "Angled": 15
+        },
+        {
+          "type": "Power Output 1",
+          "model": "4 Pin XLR Male",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "camera",
+      "Manufacturer": "Blackmagic",
+      "Product": "Blackmagic Cinema Camera",
+      "Connector": [
+        {
+          "type": "Connector",
+          "model": "2.5mm DC Jack (for Blackmagic)",
+          "Straight": 10,
+          "Angled": 15
+        }
+      ],
+      "notes": "2.5 x 5.5mm DC Jack"
+    },
+    {
+      "type": "camera",
+      "Manufacturer": "Blackmagic",
+      "Product": "Blackmagic Micro Studio Camera",
+      "Connector": [
+        {
+          "type": "Connector",
+          "model": "Canon LP-6E Battery Eliminator",
+          "Straight": 40,
+          "Angled": 'N/A'
+        }
+      ]
+    },
+    {
+      "type": "camera",
+      "Manufacturer": "Blackmagic",
+      "Product": "Blackmagic Micro Cinema Camera",
+      "Connector": [
+        {
+          "type": "Connector",
+          "model": "Canon LP-6E Battery Eliminator",
+          "Straight": 40,
+          "Angled": 'N/A'
+        }
+      ]
+    },
+    {
+      "type": "camera",
+      "Manufacturer": "Blackmagic",
+      "Product": "Blackmagic Pocket Cinema Camera",
+      "Connector": [
+        {
+          "type": "Connector",
+          "model": "0.7mm DC Jack (for Blackmagic)",
+          "Straight": 10,
+          "Angled": 'N/A'
+        }
+      ]
+    },
+    {
+      "type": "camera",
+      "Manufacturer": "Blackmagic",
+      "Product": "Blackmagic Pocket Cinema Camera 4K/6K",
+      "Connector": [
+        {
+          "type": "Connector",
+          "model": "Weipu Connector (for Blackmagic)",
+          "Straight": 20,
+          "Angled": 'N/A'
+        }
+      ],
+      "notes":"SF610/S2"
+    },
+    {
+      "type": "camera",
+      "Manufacturer": "Grassvalley",
+      "Product": "LDX 100 Series",
+      "Connector": [
+        {
+          "type": "Connector",
+          "model": "4 Pin XLR Female",
+          "Straight": 10,
+          "Angled": 15
+        },
+        {
+          "type": "Power Output 1",
+          "model": "4 Pin XLR Male",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "camera",
+      "Manufacturer": "Grassvalley",
+      "Product": "LDX 86 Series",
+      "Connector": [
+        {
+          "type": "Connector",
+          "model": "4 Pin XLR Female",
+          "Straight": 10,
+          "Angled": 15
+        },
+        {
+          "type": "Power Output 1",
+          "model": "4 Pin XLR Male",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "camera",
+      "Manufacturer": "Grassvalley",
+      "Product": "LDX 85 4K",
+      "Connector": [
+        {
+          "type": "Connector",
+          "model": "4 Pin XLR Female",
+          "Straight": 10,
+          "Angled": 15
+        },
+        {
+          "type": "Power Output 1",
+          "model": "4 Pin XLR Male",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "camera",
+      "Manufacturer": "Grassvalley",
+      "Product": "LDX 82 Series",
+      "Connector": [
+        {
+          "type": "Connector",
+          "model": "4 Pin XLR Female",
+          "Straight": 10,
+          "Angled": 15
+        },
+        {
+          "type": "Power Output 1",
+          "model": "4 Pin XLR Male",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "camera",
+      "Manufacturer": "Grassvalley",
+      "Product": "LDXC 86N",
+      "Connector": [
+        {
+          "type": "Connector",
+          "model": "4 Pin XLR Female",
+          "Straight": 10,
+          "Angled": 15
+        }
+      ]
+    },
+    {
+      "type": "camera",
+      "Manufacturer": "Grassvalley",
+      "Product": "LDXC 85N",
+      "Connector": [
+        {
+          "type": "Connector",
+          "model": "4 Pin XLR Female",
+          "Straight": 10,
+          "Angled": 15
+        }
+      ]
+    },
+    {
+      "type": "camera",
+      "Manufacturer": "Grassvalley",
+      "Product": "LDXC 82",
+      "Connector": [
+        {
+          "type": "Connector",
+          "model": "4 Pin XLR Female",
+          "Straight": 10,
+          "Angled": 15
+        }
+      ]
+    },
+    {
+      "type": "camera",
+      "Manufacturer": "Grassvalley",
+      "Product": "LDX C80",
+      "Connector": [
+        {
+          "type": "Connector",
+          "model": "4 Pin XLR Female",
+          "Straight": 10,
+          "Angled": 15
+        }
+      ]
+    },
+    {
       "type": "Monitor",
       "Manufacturer": "Atomos",
       "Product": "Connect OS",
@@ -565,7 +1375,7 @@ var cableData = {
           "type": "Power Input Connector",
           "model": "Sony Battery Eliminator",
           "Straight": 30,
-          "Angled": 0
+          "Angled": 'N/A'
         }
       ]
     },
@@ -1464,6 +2274,86 @@ var cableData = {
         }
       ]
     },
+    {
+      "type": "Monitor",
+      "Manufacturer": "Convergent Design",
+      "Product": "Apollo",
+      "Connector": [
+        {
+          "type": "Power Input Connector",
+          "model": "nanoCON (For Convergent Design)",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "Monitor",
+      "Manufacturer": "Convergent Design",
+      "Product": "Odyssey7Q+",
+      "Connector": [
+        {
+          "type": "Power Input Connector",
+          "model": "nanoCON (For Convergent Design)",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "Monitor",
+      "Manufacturer": "Convergent Design",
+      "Product": "Odyssey7Q",
+      "Connector": [
+        {
+          "type": "Power Input Connector",
+          "model": "nanoCON (For Convergent Design)",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "Monitor",
+      "Manufacturer": "Convergent Design",
+      "Product": "Odyssey7",
+      "Connector": [
+        {
+          "type": "Power Input Connector",
+          "model": "nanoCON (For Convergent Design)",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "Monitor",
+      "Manufacturer": "Convergent Design",
+      "Product": "Gemini 4:4:4",
+      "Connector": [
+        {
+          "type": "Power Input Connector",
+          "model": "4 Pin RP Hirose (For Convergent Design)",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "Monitor",
+      "Manufacturer": "Convergent Design",
+      "Product": "nanoFlash",
+      "Connector": [
+        {
+          "type": "Power Input Connector",
+          "model": "4 Pin RP Hirose (For Convergent Design)",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+  ],
+  "connectorB": [
     {
       "type": "Camera Stabaliser",
       "Manufacturer": "Tiffen",

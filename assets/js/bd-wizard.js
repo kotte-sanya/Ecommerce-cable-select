@@ -1,17 +1,61 @@
 
-var deviceType = '', manufacturer = '', product = '', filteredData = [];
+var deviceType = 'camera', manufacturer = 'arri', product = '', filteredData = [];
 
 console.log(cableData)
 
 const filterData = function() {
-    cableData.devices.forEach((item) => {
-        
-    })
+    filteredData = [];
+    cableData.connectorA.forEach(item => {
+        if (lower(item.type) === lower(deviceType) && lower(item.Manufacturer) === lower(manufacturer)) {
+            filteredData.push(item);
+        }
+    });
+    cableData.connectorB.forEach(item => {
+        if (lower(item.type) === lower(deviceType) && lower(item.Manufacturer) === lower(manufacturer)) {
+            filteredData.push(item);
+        }
+    });
+    console.log(filteredData.length);
+}
+
+const lower = function (str){
+    return str.toUpperCase();
+}
+
+const getProductId = function(productName) {
+    return productName.split(' ').join('-');
+}
+
+const fixFileName = function (productName) {
+    return productName.replace("+", "-").replace(":", "-").replace("/", "-");
 }
 
 const getProductHtml = function() {
-    let body = '';
+    let body = `
+        <h5 class="bd-wizard-step-title">Step 3</h5>
+        <h2 class="section-heading mb-5">The Camera is a…</h2>
+        <div class="purpose-radios-wrapper">
+    `;
+    filteredData.forEach((item, inx) => {
+        let deviceImageName = `${fixFileName(item.Product)}.png`;
+        const productId = getProductId(item.Product);
+        const checked = (inx === 0) ? 'checked': '';
+        body += `
+            <div class="purpose-radio">
+                <input type="radio" name="products" id="${productId}" class="choose-manufacturer purpose-radio-input" value="${productId}" ${checked}>
+                <label for="${productId}" class="purpose-radio-label">
+                <span class="label-icon">
+                  <img src="assets/images/devices/${deviceType}/${manufacturer}/${deviceImageName}" alt="no-Image" class="select-img">
+                </span>
+                <span class="label-text">${item.Product}</span>
+                </label>
+              </div>
+        `;
+    })
 
+    body += `
+        </div>
+    `;
 
     return body;
 }
@@ -23,11 +67,11 @@ var steps = $("#wizard").steps({
     stepsOrientation: "vertical",
     titleTemplate: '<span class="number">#index#</span>',
     onStepChanging: function (event, currentIndex, newIndex) {
-        // console.log(event, currentIndex, newIndex)
+        filterData();
         const idStr = `wizard-p-${newIndex}`;
         if (newIndex === 2) {
             const section = $(`#${idStr}`);
-            console.log(newIndex)
+            section.html(getProductHtml());
         }
         return true;
     },

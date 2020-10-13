@@ -95,14 +95,16 @@ main {
   opacity: 0;
 }
 .wizard .content .purpose-radio .purpose-radio-input:checked + .purpose-radio-label {
-  border-color: #00d69f;
-  transform: scale(1.05);
+  border:solid 5px #d63200;
+  box-shadow: gray 5px 5px 10px;
+  transform: translate(-4px, -4px);
 }
 .wizard .content .purpose-radio .purpose-radio-input + .purpose-radio-label:hover {
-  transform: scale(1.05);
+  transform: translate(-5px, -5px);
+  box-shadow: gray 5px 5px 10px;
 }
 .wizard .content .purpose-radio .purpose-radio-input:checked + .purpose-radio-label .label-icon {
-  color: #00d69f;
+  color: #d63200;
 }
 .wizard .content .purpose-radio .purpose-radio-input:checked + .purpose-radio-label .label-icon .label-icon-default {
   display: none;
@@ -111,7 +113,7 @@ main {
   display: inline-block;
 }
 .wizard .content .purpose-radio .purpose-radio-input:checked + .purpose-radio-label .label-text {
-  color: #00d69f;
+  color: #d63200;
   font-weight: bold;
 }
 .wizard .content .purpose-radio .purpose-radio-label {
@@ -156,6 +158,9 @@ main {
   color: #030303;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
 }
 .wizard .content .purpose-radios-wrapper {
   margin-top: 60px;
