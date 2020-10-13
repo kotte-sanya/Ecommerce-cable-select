@@ -1,10 +1,12 @@
 
-var deviceType = '', manufacturer = '', product = '';
+var deviceType = '', manufacturer = '', product = '', filteredData = [];
 
 console.log(cableData)
 
 const filterData = function() {
-    
+    cableData.devices.forEach((item) => {
+        
+    })
 }
 
 const getProductHtml = function() {
