@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BootstrapDash Wizard</title>
+  <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bd-wizard.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-sm navbar-light bg-white">
+      <div class="container">
+        <!-- <a class="navbar-brand" href="#"><img src="assets/images/logo.svg" alt="logo"></a> -->
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+          aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <h1>Cine Equipment Power Cable Builder</h1>
+          <!-- <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul> -->
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="d-flex align-items-center">
+    <div class="container">
+        <div id="wizard">
+          <h3>Step 1 Title</h3>
+          <section>
+           <h5 class="bd-wizard-step-title">Step 1</h5>
+           <h2 class="section-heading">The device I want to Power is a…</h2>
+           <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p> -->
+           <div class="purpose-radios-wrapper">
+              <div class="purpose-radio">
+                 <input type="radio" name="device" id="camera" class="choose-device purpose-radio-input" value="camera" checked>
+                 <label for="camera" class="purpose-radio-label">
+                  <span class="label-icon">
+                    <img src="assets/images/01-device/01-Alexa.png" alt="branding" class="select-img">
+                  </span>
+                   <span class="label-text">Camera</span>
+                 </label>
+              </div>
+              <div class="purpose-radio">
+                 <input type="radio" name="device" id="monitor" class="choose-device purpose-radio-input" value="monitor">
+                 <label for="monitor" class="purpose-radio-label">
+                  <span class="label-icon">
+                    <img src="assets/images/01-device/02-monitor_recorder.png" alt="branding" class="select-img">
+                  </span>
+                   <span class="label-text">Monitor/Recorder</span>
+                 </label>
+              </div>
+              <div class="purpose-radio">
+                 <input type="radio" name="device" id="wireless-follow-focus" class="choose-device purpose-radio-input" value="wireless follow focus">
+                 <label for="wireless-follow-focus" class="purpose-radio-label">
+                  <span class="label-icon">
+                    <img src="assets/images/01-device/03-Wireless-Follow-Focus.png" alt="branding" class="select-img">
+                  </span>
+                   <span class="label-text">Wireless Follow Focus</span>
+                 </label>
+              </div>
+              <div class="purpose-radio">
+                 <input type="radio" name="device" id="wireless-video-link" class="choose-device purpose-radio-input" value="wireless video link">
+                 <label for="wireless-video-link" class="purpose-radio-label">
+                  <span class="label-icon">
+                    <img src="assets/images/01-device/04-Wireless-Video-Link.png" alt="branding" class="select-img">
+                  </span>
+                   <span class="label-text">Wireless Video Link</span>
+                 </label>
+              </div>
+              <div class="purpose-radio">
+                 <input type="radio" name="device" id="wireless-range-finder" class="choose-device purpose-radio-input" value="wireless range finder">
+                 <label for="wireless-range-finder" class="purpose-radio-label">
+                  <span class="label-icon">
+                    <img src="assets/images/01-device/05-Wireless-Range-Finder.png" alt="branding" class="select-img">
+                  </span>
+                   <span class="label-text">Wireless Range Finder</span>
+                 </label>
+              </div>
+              <div class="purpose-radio">
+                 <input type="radio" name="device" id="steadicam-steady-cam" class="choose-device purpose-radio-input" value="steadicam steady cam">
+                 <label for="steadicam-steady-cam" class="purpose-radio-label">
+                  <span class="label-icon">
+                    <img src="assets/images/01-device/06-Steadicam-Steady-cam.png" alt="branding" class="select-img">
+                  </span>
+                   <span class="label-text">Steadicam Steady Cam</span>
+                 </label>
+              </div>
+              <div class="purpose-radio">
+                 <input type="radio" name="device" id="gimbal" class="choose-device purpose-radio-input" value="gimbal">
+                 <label for="gimbal" class="purpose-radio-label">
+                  <span class="label-icon">
+                    <img src="assets/images/01-device/07-Gimbal.png" alt="branding" class="select-img">
+                  </span>
+                   <span class="label-text">Gimbal</span>
+                 </label>
+              </div>
+           </div>
+          </section>
+          <h3>Step 2 Title</h3>
+          <section>
+            <h5 class="bd-wizard-step-title">Step 2</h5>
+            <h2 class="section-heading">It is a camera made by….</h2>
+            <div class="purpose-radios-wrapper">
+              <div class="purpose-radio">
+                <input type="radio" name="madeBy" id="arri" class="choose-manufacturer purpose-radio-input" value="arri" checked>
+                <label for="arri" class="purpose-radio-label">
+                <span class="label-icon">
+                  <img src="assets/images/02-made-by/01-ARRI.png" alt="branding" class="select-img">
+                </span>
+                </label>
+              </div>
+              <div class="purpose-radio">
+                <input type="radio" name="madeBy" id="red" class="choose-manufacturer purpose-radio-input" value="red">
+                <label for="red" class="purpose-radio-label">
+                <span class="label-icon">
+                  <img src="assets/images/02-made-by/02-RED.png" alt="branding" class="select-img">
+                </span>
+                </label>
+              </div>
+              <div class="purpose-radio">
+                <input type="radio" name="madeBy" id="panasonic" class="choose-manufacturer purpose-radio-input" value="panasonic">
+                <label for="panasonic" class="purpose-radio-label">
+                <span class="label-icon">
+                  <img src="assets/images/02-made-by/03-Panasonic.png" alt="branding" class="select-img">
+                </span>
+                </label>
+              </div>
+              <div class="purpose-radio">
+                <input type="radio" name="madeBy" id="black-magic-design" class="choose-manufacturer purpose-radio-input" value="blackmagicdesign">
+                <label for="black-magic-design" class="purpose-radio-label">
+                <span class="label-icon">
+                  <img src="assets/images/02-made-by/04-Blackmagicdesign.png" alt="branding" class="select-img">
+                </span>
+                </label>
+              </div>
+              <div class="purpose-radio">
+                <input type="radio" name="madeBy" id="sonny" class="choose-manufacturer purpose-radio-input" value="sonny">
+                <label for="sonny" class="purpose-radio-label">
+                <span class="label-icon">
+                  <img src="assets/images/02-made-by/05-Sony.png" alt="branding" class="select-img">
+                </span>
+                </label>
+              </div>
+          </div>
+
+          </section>
+          <h3>Step 3 Title</h3>
+          <section>
+              <h5 class="bd-wizard-step-title">Step 3</h5>
+              <h2 class="section-heading mb-5">The Camera is a…</h2>
+              <h6 class="font-weight-bold">Select business type</h6>
+              <p class="mb-4" id="business-type">Branding</p>
+              <h6 class="font-weight-bold">Enter your Account Details</h6>
+              <p class="mb-4"><span id="enteredFirstName">Cha</span> <span id="enteredLastName">Ji-Hun C</span> <br>
+                  Phone: <span id="enteredPhoneNumber">+230-582-6609</span> <br>
+                  Email: <span id="enteredEmailAddress">willms_abby@gmail.com</span></p>
+
+          </section>
+          <h3>Step 4 Title</h3>
+          <section>
+              <h5 class="bd-wizard-step-title">Step 4</h5>
+              <h2 class="section-heading mb-5">Review your Details and Submit</h2>
+              <h6 class="font-weight-bold">Select business type</h6>
+              <p class="mb-4" id="business-type">Branding</p>
+              <h6 class="font-weight-bold">Enter your Account Details</h6>
+              <p class="mb-4"><span id="enteredFirstName">Cha</span> <span id="enteredLastName">Ji-Hun C</span> <br>
+                  Phone: <span id="enteredPhoneNumber">+230-582-6609</span> <br>
+                  Email: <span id="enteredEmailAddress">willms_abby@gmail.com</span></p>
+
+          </section>
+        </div>
+    </div>
+  </main>
+  <script src="assets/js/jquery-3.4.1.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery.steps.min.js"></script>
+  <script src="assets/data/cableData.js"></script>
+  <script src="assets/js/bd-wizard.js"></script>
+</body>
+</html>
