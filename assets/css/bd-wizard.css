@@ -238,6 +238,8 @@ main {
     left: 0;
     display: -webkit-box;
     display: flex;
+    margin-top: 10px;
+    margin-bottom: 50px;
   }
   .wizard.vertical .steps > ul {
     width: 50px;

@@ -45,7 +45,7 @@ const getProductHtml = function() {
                 <input type="radio" name="products" id="${productId}" class="choose-manufacturer purpose-radio-input" value="${productId}" ${checked}>
                 <label for="${productId}" class="purpose-radio-label">
                 <span class="label-icon">
-                  <img src="assets/images/devices/${deviceType}/${manufacturer}/${deviceImageName}" alt="no-Image" class="select-img">
+                  <img src="assets/images/${manufacturer}/${deviceImageName}" alt="no-Image" class="select-img">
                 </span>
                 <span class="label-text">${item.Product}</span>
                 </label>
@@ -69,7 +69,11 @@ var steps = $("#wizard").steps({
     onStepChanging: function (event, currentIndex, newIndex) {
         filterData();
         const idStr = `wizard-p-${newIndex}`;
+        if (newIndex === 1) {
+            $("#step2-title").text(`It is a ${deviceType} made by….`);
+        }
         if (newIndex === 2) {
+            $("#step3-title").text(`The ${deviceType} is a…`);
             const section = $(`#${idStr}`);
             section.html(getProductHtml());
         }
