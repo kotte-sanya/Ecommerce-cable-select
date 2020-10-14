@@ -81,10 +81,12 @@ main {
   font-weight: bold;
   color: #030303;
   margin-bottom: 17px;
+  text-align: center;
 }
 .wizard .content p {
   font-size: 16px;
   color: #030303;
+  text-align: center;
 }
 .wizard .content .purpose-radio {
   position: relative;

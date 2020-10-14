@@ -1,7 +1,6 @@
 
 var deviceType = 'camera', manufacturer = 'arri', product = '', filteredData = [];
-
-console.log(cableData)
+var cableLength = 30;
 
 const filterData = function() {
     filteredData = [];
@@ -15,7 +14,6 @@ const filterData = function() {
             filteredData.push(item);
         }
     });
-    console.log(filteredData.length);
 }
 
 const lower = function (str){
@@ -27,7 +25,7 @@ const getProductId = function(productName) {
 }
 
 const fixFileName = function (productName) {
-    return productName.replace("+", "-").replace(":", "-").replace("/", "-");
+    return productName.replace("+", "-").replace(":", "-").replace("/", "-").toLowerCase();
 }
 
 const getProductHtml = function() {
@@ -45,7 +43,7 @@ const getProductHtml = function() {
                 <input type="radio" name="products" id="${productId}" class="choose-manufacturer purpose-radio-input" value="${productId}" ${checked}>
                 <label for="${productId}" class="purpose-radio-label">
                 <span class="label-icon">
-                  <img src="assets/images/${manufacturer}/${deviceImageName}" alt="no-Image" class="select-img">
+                  <img src="assets/device-images/${manufacturer}/${deviceImageName}" alt="no-Image" class="select-img">
                 </span>
                 <span class="label-text">${item.Product}</span>
                 </label>
@@ -77,10 +75,21 @@ var steps = $("#wizard").steps({
             const section = $(`#${idStr}`);
             section.html(getProductHtml());
         }
+
         return true;
     },
     onStepChanged: function (event, currentIndex, priorIndex) {
-        // console.log(event, currentIndex, priorIndex)
+        if(priorIndex > currentIndex) {
+            $theSteps = $('.steps ul').find('.current');
+            let index = $theSteps.index();
+            $($theSteps).parent().children().each((i, d) => {
+                if (i > index) {
+                    $(d).removeClass('done')._enableAria(false)
+                }
+            })
+            // $($theSteps).next('li').removeClass('done')._enableAria(false);
+        }
+        
         return true;
     },
     onFinishing: function (event, currentIndex)
