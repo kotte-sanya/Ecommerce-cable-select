@@ -37,7 +37,7 @@
       </div>
     </nav>
   </header>
-  <main class="d-flex align-items-center">
+  <main class="d-flex">
     <div class="container">
         <div id="wizard">
           <h3>Step 1 Title</h3>
@@ -227,10 +227,10 @@
           <section>
             <h5 class="bd-wizard-step-title">Step 4</h5>
             <h2 class="section-heading mb-5">Angled or Straight Connector….</h2>
-            <p>It’s an 8 Pin 2B Lemo (for Arri)</p>
+            <p id="connectorA-type">It’s an 8 Pin 2B Lemo (for Arri)</p>
             <div class="purpose-radios-wrapper">
               <div class="purpose-radio">
-                <input type="radio" name="angled" id="straight" class="choose-manufacturer purpose-radio-input" value="straight" checked>
+                <input type="radio" name="angled" id="straight" class="choose-connectorA purpose-radio-input" value="straight" checked>
                 <label for="straight" class="purpose-radio-label">
                 <span class="label-icon">
                   <img src="assets/images/04-connector/01-Straight Lemo.png" alt="branding" class="select-img">
@@ -238,7 +238,7 @@
                 </label>
               </div>
               <div class="purpose-radio">
-                <input type="radio" name="angled" id="angled" class="choose-manufacturer purpose-radio-input" value="angled">
+                <input type="radio" name="angled" id="angled" class="choose-connectorA purpose-radio-input" value="angled">
                 <label for="angled" class="purpose-radio-label">
                 <span class="label-icon">
                   <img src="assets/images/04-connector/02-Angled Lemo.png" alt="branding" class="select-img">
@@ -253,51 +253,66 @@
             <h2 class="section-heading mb-5">I want to power it from a...</h2>
             <div class="purpose-radios-wrapper">
               <div class="purpose-radio">
-                <input type="radio" name="power" id="d-tap" class="choose-manufacturer purpose-radio-input" value="d-tap" checked>
-                <label for="d-tap" class="purpose-radio-label">
-                <span class="label-icon">
-                  <img src="assets/images/05-power it from a/01-D-Tap Socket.png" alt="branding" class="select-img">
-                </span>
-                </label>
-              </div>
-              <div class="purpose-radio">
-                <input type="radio" name="power" id="mains" class="choose-manufacturer purpose-radio-input" value="mains">
-                <label for="mains" class="purpose-radio-label">
-                <span class="label-icon">
-                  <img src="assets/images/05-power it from a/02-Mains Power Supply.png" alt="branding" class="select-img">
-                </span>
-                </label>
-              </div>
-              <div class="purpose-radio">
-                <input type="radio" name="power" id="battery" class="choose-manufacturer purpose-radio-input" value="battery">
-                <label for="battery" class="purpose-radio-label">
-                <span class="label-icon">
-                  <img src="assets/images/05-power it from a/03-Battery Plate.png" alt="branding" class="select-img">
-                </span>
-                </label>
-              </div>
-              <div class="purpose-radio">
-                <input type="radio" name="power" id="steadicam" class="choose-manufacturer purpose-radio-input" value="steadicam">
+                <input type="radio" name="power" id="steadicam" class="choose-power purpose-radio-input" value="steadicam" checked>
                 <label for="steadicam" class="purpose-radio-label">
                 <span class="label-icon">
                   <img src="assets/images/05-power it from a/04-Steadicam Steady cam.png" alt="branding" class="select-img">
                 </span>
+                <span class="label-text">Steadicam / Steady cam</span>
                 </label>
               </div>
               <div class="purpose-radio">
-                <input type="radio" name="power" id="gimbal" class="choose-manufacturer purpose-radio-input" value="gimbal">
-                <label for="gimbal" class="purpose-radio-label">
+                <input type="radio" name="power" id="battery-plate" class="choose-power purpose-radio-input" value="battery plate">
+                <label for="battery-plate" class="purpose-radio-label">
+                <span class="label-icon">
+                  <img src="assets/images/05-power it from a/03-Battery Plate.png" alt="branding" class="select-img">
+                </span>
+                <span class="label-text">Battery Plate</span>
+                </label>
+              </div>
+              <div class="purpose-radio">
+                <input type="radio" name="power" id="monitor-smallhd" class="choose-power purpose-radio-input" value="monitor">
+                <label for="monitor-smallhd" class="purpose-radio-label">
+                <span class="label-icon">
+                  <img src="assets/images/05-power it from a/07-monitor.png" alt="branding" class="select-img">
+                </span>
+                <span class="label-text">Monitor SmallHD</span>
+                </label>
+              </div>
+              <div class="purpose-radio">
+                <input type="radio" name="power" id="d-tap" class="choose-power purpose-radio-input" value="d-tap">
+                <label for="d-tap" class="purpose-radio-label">
+                <span class="label-icon">
+                  <img src="assets/images/05-power it from a/01-D-Tap Socket.png" alt="branding" class="select-img">
+                </span>
+                <span class="label-text">D-Tap Socket</span>
+                </label>
+              </div>
+              <div class="purpose-radio">
+                <input type="radio" name="power" id="mains" class="choose-power purpose-radio-input" value="mains">
+                <label for="mains" class="purpose-radio-label">
+                <span class="label-icon">
+                  <img src="assets/images/05-power it from a/02-Mains Power Supply.png" alt="branding" class="select-img">
+                </span>
+                <span class="label-text">Mains Power Supply</span>
+                </label>
+              </div>
+              <div class="purpose-radio">
+                <input type="radio" name="power" id="power-gimbal" class="choose-power purpose-radio-input" value="power-gimbal">
+                <label for="power-gimbal" class="purpose-radio-label">
                 <span class="label-icon">
                   <img src="assets/images/05-power it from a/05-Gimbal.png" alt="branding" class="select-img">
                 </span>
+                <span class="label-text">Gimbal</span>
                 </label>
               </div>
               <div class="purpose-radio">
-                <input type="radio" name="power" id="block-battery" class="choose-manufacturer purpose-radio-input" value="block-battery">
+                <input type="radio" name="power" id="block-battery" class="choose-power purpose-radio-input" value="block-battery">
                 <label for="block-battery" class="purpose-radio-label">
                 <span class="label-icon">
                   <img src="assets/images/05-power it from a/06-Block Battery.png" alt="branding" class="select-img">
                 </span>
+                <span class="label-text">Block Battery</span>
                 </label>
               </div>
             </div>
@@ -305,10 +320,10 @@
           <h3>Step 6 Title</h3>
           <section>
             <h5 class="bd-wizard-step-title">Step 6</h5>
-            <h2 class="section-heading mb-5">It is a Steadicam/Steadycam made by….</h2>
+            <h2 id="step6-title" class="section-heading mb-5">It is a Steadicam/Steadycam made by….</h2>
             <div class="purpose-radios-wrapper">
               <div class="purpose-radio">
-                <input type="radio" name="steadicam-made-by" id="tiffen" class="choose-manufacturer purpose-radio-input" value="tiffen" checked>
+                <input type="radio" name="steadicam-made-by" id="tiffen" class="choose-powerManufacturer purpose-radio-input" value="tiffen" checked>
                 <label for="tiffen" class="purpose-radio-label">
                 <span class="label-icon">
                   <img src="assets/images/06-steadicam Steadycam made by/01-TIFFEN.png" alt="branding" class="select-img">
@@ -316,11 +331,55 @@
                 </label>
               </div>
               <div class="purpose-radio">
-                <input type="radio" name="steadicam-made-by" id="glidecam" class="choose-manufacturer purpose-radio-input" value="glidecam">
+                <input type="radio" name="steadicam-made-by" id="glidecam" class="choose-powerManufacturer purpose-radio-input" value="glidecam">
                 <label for="glidecam" class="purpose-radio-label">
                 <span class="label-icon">
                   <img src="assets/images/06-steadicam Steadycam made by/02-GLIDECAM.png" alt="branding" class="select-img">
                 </span>
+                </label>
+              </div>
+              <div class="purpose-radio">
+                <input type="radio" name="steadicam-made-by" id="power-arri" class="choose-powerManufacturer purpose-radio-input" value="arri">
+                <label for="power-arri" class="purpose-radio-label">
+                <span class="label-icon">
+                  <img src="assets/images/06-steadicam Steadycam made by/03-ARRI.png" alt="branding" class="select-img">
+                </span>
+                </label>
+              </div>
+              <div class="purpose-radio">
+                <input type="radio" name="steadicam-made-by" id="gpi-pro-systems" class="choose-powerManufacturer purpose-radio-input" value="GPI Pro Systems">
+                <label for="gpi-pro-systems" class="purpose-radio-label">
+                <span class="label-icon">
+                  <img src="assets/images/06-steadicam Steadycam made by/04-GPI Pro Systems.png" alt="no-image" class="select-img">
+                </span>
+                <span class="label-text">GPI Pro Systems</span>
+                </label>
+              </div>
+              <div class="purpose-radio">
+                <input type="radio" name="steadicam-made-by" id="blind-spot-gear" class="choose-powerManufacturer purpose-radio-input" value="Blind Spot Gear">
+                <label for="blind-spot-gear" class="purpose-radio-label">
+                <span class="label-icon">
+                  <img src="assets/images/06-steadicam Steadycam made by/05-Blind Spot Gear.png" alt="no-image" class="select-img">
+                </span>
+                <span class="label-text">Blind Spot Gear</span>
+                </label>
+              </div>
+              <div class="purpose-radio">
+                <input type="radio" name="steadicam-made-by" id="SmallRig" class="choose-powerManufacturer purpose-radio-input" value="SmallRig">
+                <label for="SmallRig" class="purpose-radio-label">
+                <span class="label-icon">
+                  <img src="assets/images/06-steadicam Steadycam made by/06-SmallRig.png" alt="no-image" class="select-img">
+                </span>
+                <span class="label-text">SmallRig</span>
+                </label>
+              </div>
+              <div class="purpose-radio">
+                <input type="radio" name="steadicam-made-by" id="SmallHD" class="choose-powerManufacturer purpose-radio-input" value="SmallHD">
+                <label for="SmallHD" class="purpose-radio-label">
+                <span class="label-icon">
+                  <img src="assets/images/06-steadicam Steadycam made by/07-SmallHD.png" alt="no-image" class="select-img">
+                </span>
+                <span class="label-text">Monitor SmallHD</span>
                 </label>
               </div>
             </div>
@@ -331,7 +390,7 @@
             <h2 class="section-heading mb-5">I need to plug into a….</h2>
             <div class="purpose-radios-wrapper">
               <div class="purpose-radio">
-                <input type="radio" name="plug-into" id="m-1" class="choose-manufacturer purpose-radio-input" value="m-1" checked>
+                <input type="radio" name="plug-into" id="m-1" class="choose-powerProduct purpose-radio-input" value="m-1" checked>
                 <label for="m-1" class="purpose-radio-label">
                 <span class="label-icon">
                   <img src="assets/images/07-I need to plug into a/01-STEADICAM M-1.png" alt="branding" class="select-img">
@@ -339,7 +398,7 @@
                 </label>
               </div>
               <div class="purpose-radio">
-                <input type="radio" name="plug-into" id="zephyr" class="choose-manufacturer purpose-radio-input" value="zephyr">
+                <input type="radio" name="plug-into" id="zephyr" class="choose-powerProduct purpose-radio-input" value="zephyr">
                 <label for="zephyr" class="purpose-radio-label">
                 <span class="label-icon">
                   <img src="assets/images/07-I need to plug into a/02-STEADICAM ZEPHYR.png" alt="branding" class="select-img">
@@ -347,7 +406,7 @@
                 </label>
               </div>
               <div class="purpose-radio">
-                <input type="radio" name="plug-into" id="lita" class="choose-manufacturer purpose-radio-input" value="lita">
+                <input type="radio" name="plug-into" id="lita" class="choose-powerProduct purpose-radio-input" value="lita">
                 <label for="lita" class="purpose-radio-label">
                 <span class="label-icon">
                   <img src="assets/images/07-I need to plug into a/03-Steadicam Litra.png" alt="branding" class="select-img">
@@ -355,7 +414,7 @@
                 </label>
               </div>
               <div class="purpose-radio">
-                <input type="radio" name="plug-into" id="m-2" class="choose-manufacturer purpose-radio-input" value="m-2">
+                <input type="radio" name="plug-into" id="m-2" class="choose-powerProduct purpose-radio-input" value="m-2">
                 <label for="m-2" class="purpose-radio-label">
                 <span class="label-icon">
                   <img src="assets/images/07-I need to plug into a/04-Steadicam M-2.png" alt="branding" class="select-img">
@@ -363,7 +422,7 @@
                 </label>
               </div>
               <div class="purpose-radio">
-                <input type="radio" name="plug-into" id="CLIPPER2" class="choose-manufacturer purpose-radio-input" value="CLIPPER2">
+                <input type="radio" name="plug-into" id="CLIPPER2" class="choose-powerProduct purpose-radio-input" value="CLIPPER2">
                 <label for="CLIPPER2" class="purpose-radio-label">
                 <span class="label-icon">
                   <img src="assets/images/07-I need to plug into a/05-STEADICAM CLIPPER2.png" alt="branding" class="select-img">
@@ -371,7 +430,7 @@
                 </label>
               </div>
               <div class="purpose-radio">
-                <input type="radio" name="plug-into" id="AERO" class="choose-manufacturer purpose-radio-input" value="AERO">
+                <input type="radio" name="plug-into" id="AERO" class="choose-powerProduct purpose-radio-input" value="AERO">
                 <label for="AERO" class="purpose-radio-label">
                 <span class="label-icon">
                   <img src="assets/images/07-I need to plug into a/06-STEADICAM AERO.png" alt="branding" class="select-img">
@@ -379,7 +438,7 @@
                 </label>
               </div>
               <div class="purpose-radio">
-                <input type="radio" name="plug-into" id="Archer2" class="choose-manufacturer purpose-radio-input" value="Archer2">
+                <input type="radio" name="plug-into" id="Archer2" class="choose-powerProduct purpose-radio-input" value="Archer2">
                 <label for="Archer2" class="purpose-radio-label">
                 <span class="label-icon">
                   <img src="assets/images/07-I need to plug into a/07-STEADICAM Archer2.png" alt="branding" class="select-img">
@@ -387,7 +446,7 @@
                 </label>
               </div>
               <div class="purpose-radio">
-                <input type="radio" name="plug-into" id="SHADOW" class="choose-manufacturer purpose-radio-input" value="SHADOW">
+                <input type="radio" name="plug-into" id="SHADOW" class="choose-powerProduct purpose-radio-input" value="SHADOW">
                 <label for="SHADOW" class="purpose-radio-label">
                 <span class="label-icon">
                   <img src="assets/images/07-I need to plug into a/08-STEADICAM SHADOW.png" alt="branding" class="select-img">
@@ -395,7 +454,7 @@
                 </label>
               </div>
               <div class="purpose-radio">
-                <input type="radio" name="plug-into" id="Flyer" class="choose-manufacturer purpose-radio-input" value="Flyer">
+                <input type="radio" name="plug-into" id="Flyer" class="choose-powerProduct purpose-radio-input" value="Flyer">
                 <label for="Flyer" class="purpose-radio-label">
                 <span class="label-icon">
                   <img src="assets/images/07-I need to plug into a/09-STEADICAM Flyer.png" alt="branding" class="select-img">
@@ -408,21 +467,24 @@
           <section>
             <h5 class="bd-wizard-step-title">Step 8</h5>
             <h2 class="section-heading mb-5">Angled or Straight Connector….</h2>
+            <p id="connectorB-type">It’s an 3 Pin 2B Lemo</p>
             <div class="purpose-radios-wrapper">
               <div class="purpose-radio">
-                <input type="radio" name="angled2" id="straight2" class="choose-manufacturer purpose-radio-input" value="straight2" checked>
+                <input type="radio" name="angled2" id="straight2" class="choose-connectB purpose-radio-input" value="straight2" checked>
                 <label for="straight2" class="purpose-radio-label">
                 <span class="label-icon">
                   <img src="assets/images/08-connector 3Pin2B Lemo/03-Straight Lemo.png" alt="branding" class="select-img">
                 </span>
+                <span class="label-text">Straight Lemo</span>
                 </label>
               </div>
               <div class="purpose-radio">
-                <input type="radio" name="angled2" id="angled2" class="choose-manufacturer purpose-radio-input" value="angled2">
+                <input type="radio" name="angled2" id="angled2" class="choose-connectB purpose-radio-input" value="angled2">
                 <label for="angled2" class="purpose-radio-label">
                 <span class="label-icon">
                   <img src="assets/images/08-connector 3Pin2B Lemo/04-Angled Lemo.png" alt="branding" class="select-img">
                 </span>
+                <span class="label-text">Angled Lemo</span>
                 </label>
               </div>
             </div>
@@ -433,27 +495,30 @@
             <h2 class="section-heading mb-5">Which type of cable would you like?</h2>
             <div class="purpose-radios-wrapper">
               <div class="purpose-radio">
-                <input type="radio" name="cable" id="short-coiled" class="choose-manufacturer purpose-radio-input" value="short-coiled" checked>
+                <input type="radio" name="cable" id="short-coiled" class="choose-cableType purpose-radio-input" value="short-coiled" checked>
                 <label for="short-coiled" class="purpose-radio-label">
                 <span class="label-icon">
                   <img src="assets/images/09-type of cable would you like/01-Short Coiled 45cm to 90cm.png" alt="branding" class="select-img">
                 </span>
+                <span class="label-text">Short Coiled<br>45cm to 90cm</span>
                 </label>
               </div>
               <div class="purpose-radio">
-                <input type="radio" name="cable" id="straight-cable" class="choose-manufacturer purpose-radio-input" value="straight-cable">
+                <input type="radio" name="cable" id="straight-cable" class="choose-cableType purpose-radio-input" value="straight-cable">
                 <label for="straight-cable" class="purpose-radio-label">
                 <span class="label-icon">
                   <img src="assets/images/09-type of cable would you like/02-Straight Cable.png" alt="branding" class="select-img">
                 </span>
+                <span class="label-text">Straight Cable</span>
                 </label>
               </div>
               <div class="purpose-radio">
-                <input type="radio" name="cable" id="long-coiled" class="choose-manufacturer purpose-radio-input" value="long-coiled">
+                <input type="radio" name="cable" id="long-coiled" class="choose-cableType purpose-radio-input" value="long-coiled">
                 <label for="long-coiled" class="purpose-radio-label">
                 <span class="label-icon">
                   <img src="assets/images/09-type of cable would you like/03-Long coiled 0.9m to 2.5m.png" alt="branding" class="select-img">
                 </span>
+                <span class="label-text">Long coiled<br>0.9m to 2.5m</span>
                 </label>
               </div>
             </div>
@@ -479,7 +544,6 @@
             <h2 class="section-heading mb-5">Your Finished Cable</h2>
             <div class="purpose-radios-wrapper">
               <div class="purpose-radio">
-                
                 <label for="short-coiled" class="purpose-radio-label">
                 <span class="label-icon">
                   <img src="assets/images/10-your finished cable/01-8Pin Angled Lemo for Arri.png" alt="branding" class="select-img">
@@ -487,7 +551,6 @@
                 </label>
               </div>
               <div class="purpose-radio">
-                
                 <label for="straight-cable" class="purpose-radio-label">
                 <span class="label-icon">
                   <img src="assets/images/10-your finished cable/02-Straight cable 50cm.png" alt="branding" class="select-img">
@@ -495,7 +558,6 @@
                 </label>
               </div>
               <div class="purpose-radio">
-                
                 <label for="long-coiled" class="purpose-radio-label">
                 <span class="label-icon">
                   <img src="assets/images/10-your finished cable/03-3Pin 2B Angled Lemo.png" alt="branding" class="select-img">

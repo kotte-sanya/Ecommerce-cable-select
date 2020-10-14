@@ -161,8 +161,11 @@ main {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   position: absolute;
-  bottom: 10px;
+  bottom: 13px;
   text-align: center;
+  background: white;
+  width: 90%;
+  line-height: 15px;
 }
 .wizard .content .purpose-radios-wrapper {
   margin-top: 60px;

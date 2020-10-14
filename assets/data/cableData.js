@@ -78,7 +78,7 @@ var cableData = {
           "type": "Power Output 1",
           "model": "D-Tap",
           "Straight": 0,
-          "Angled": 0
+          "Angled": 'N/A'
         },
         {
           "type": "Power Output 2",
@@ -116,7 +116,7 @@ var cableData = {
           "type": "Power Output 1",
           "model": "D-Tap",
           "Straight": 0,
-          "Angled": 0
+          "Angled": 'N/A'
         },
         {
           "type": "Power Output 2",
@@ -571,7 +571,7 @@ var cableData = {
           "type": "Power Output 1",
           "model": "4 Pin Hirose",
           "Straight": 0,
-          "Angled": 0
+          "Angled": 'N/A'
         }
       ]
     },
@@ -590,7 +590,7 @@ var cableData = {
           "type": "Power Output 1",
           "model": "4 Pin Hirose",
           "Straight": 0,
-          "Angled": 0
+          "Angled": 'N/A'
         }
       ]
     },
@@ -609,7 +609,7 @@ var cableData = {
           "type": "Power Output 1",
           "model": "4 Pin Hirose",
           "Straight": 0,
-          "Angled": 0
+          "Angled": 'N/A'
         }
       ]
     },
@@ -628,7 +628,7 @@ var cableData = {
           "type": "Power Output 1",
           "model": "4 Pin Hirose",
           "Straight": 0,
-          "Angled": 0
+          "Angled": 'N/A'
         }
       ]
     },
@@ -647,7 +647,7 @@ var cableData = {
           "type": "Power Output 1",
           "model": "4 Pin Hirose",
           "Straight": 0,
-          "Angled": 0
+          "Angled": 'N/A'
         }
       ]
     },
@@ -679,7 +679,7 @@ var cableData = {
           "type": "Power Output 1",
           "model": "4 Pin Hirose",
           "Straight": 0,
-          "Angled": 0
+          "Angled": 'N/A'
         }
       ]
     },
@@ -698,7 +698,7 @@ var cableData = {
           "type": "Power Output 1",
           "model": "4 Pin Hirose",
           "Straight": 0,
-          "Angled": 0
+          "Angled": 'N/A'
         }
       ]
     },
@@ -730,13 +730,13 @@ var cableData = {
           "type": "Power Output 1",
           "model": "4 Pin Hirose",
           "Straight": 0,
-          "Angled": 0
+          "Angled": 'N/A'
         },
         {
           "type": "Power Output 2",
           "model": "D-Tap",
           "Straight": 0,
-          "Angled": 0
+          "Angled": 'N/A'
         }
       ]
     },
@@ -872,13 +872,13 @@ var cableData = {
           "type": "Power Output 1",
           "model": "4 Pin Hirose",
           "Straight": 0,
-          "Angled": 0
+          "Angled": 'N/A'
         },
         {
           "type": "Power Output 2",
           "model": "D-Tap",
           "Straight": 0,
-          "Angled": 0
+          "Angled": 'N/A'
         }
       ]
     },
@@ -897,13 +897,13 @@ var cableData = {
           "type": "Power Output 1",
           "model": "4 Pin Hirose",
           "Straight": 0,
-          "Angled": 0
+          "Angled": 'N/A'
         },
         {
           "type": "Power Output 2",
           "model": "D-Tap",
           "Straight": 0,
-          "Angled": 0
+          "Angled": 'N/A'
         }
       ]
     },
@@ -922,13 +922,13 @@ var cableData = {
           "type": "Power Output 1",
           "model": "4 Pin Hirose",
           "Straight": 0,
-          "Angled": 0
+          "Angled": 'N/A'
         },
         {
           "type": "Power Output 2",
           "model": "D-Tap",
           "Straight": 0,
-          "Angled": 0
+          "Angled": 'N/A'
         }
       ]
     },
@@ -947,13 +947,13 @@ var cableData = {
           "type": "Power Output 1",
           "model": "4 Pin Hirose",
           "Straight": 0,
-          "Angled": 0
+          "Angled": 'N/A'
         },
         {
           "type": "Power Output 2",
           "model": "D-Tap",
           "Straight": 0,
-          "Angled": 0
+          "Angled": 'N/A'
         }
       ]
     },
@@ -972,13 +972,13 @@ var cableData = {
           "type": "Power Output 1",
           "model": "4 Pin Hirose",
           "Straight": 0,
-          "Angled": 0
+          "Angled": 'N/A'
         },
         {
           "type": "Power Output 2",
           "model": "D-Tap",
           "Straight": 0,
-          "Angled": 0
+          "Angled": 'N/A'
         }
       ]
     },
@@ -997,13 +997,13 @@ var cableData = {
           "type": "Power Output 1",
           "model": "4 Pin Hirose",
           "Straight": 0,
-          "Angled": 0
+          "Angled": 'N/A'
         },
         {
           "type": "Power Output 2",
           "model": "D-Tap",
           "Straight": 0,
-          "Angled": 0
+          "Angled": 'N/A'
         }
       ]
     },
@@ -1022,13 +1022,13 @@ var cableData = {
           "type": "Power Output 1",
           "model": "4 Pin Hirose",
           "Straight": 0,
-          "Angled": 0
+          "Angled": 'N/A'
         },
         {
           "type": "Power Output 2",
           "model": "D-Tap",
           "Straight": 0,
-          "Angled": 0
+          "Angled": 'N/A'
         }
       ]
     },
@@ -1047,13 +1047,13 @@ var cableData = {
           "type": "Power Output 1",
           "model": "4 Pin Hirose",
           "Straight": 0,
-          "Angled": 0
+          "Angled": 'N/A'
         },
         {
           "type": "Power Output 2",
           "model": "D-Tap",
           "Straight": 0,
-          "Angled": 0
+          "Angled": 'N/A'
         }
       ]
     },
@@ -1072,13 +1072,13 @@ var cableData = {
           "type": "Power Output 1",
           "model": "4 Pin Hirose",
           "Straight": 0,
-          "Angled": 0
+          "Angled": 'N/A'
         },
         {
           "type": "Power Output 2",
           "model": "D-Tap",
           "Straight": 0,
-          "Angled": 0
+          "Angled": 'N/A'
         }
       ]
     },
@@ -1097,13 +1097,13 @@ var cableData = {
           "type": "Power Output 1",
           "model": "4 Pin Hirose",
           "Straight": 0,
-          "Angled": 0
+          "Angled": 'N/A'
         },
         {
           "type": "Power Output 2",
           "model": "D-Tap",
           "Straight": 0,
-          "Angled": 0
+          "Angled": 'N/A'
         }
       ]
     },
@@ -1860,7 +1860,7 @@ var cableData = {
           "type": "Power Output",
           "model": "Barrel (3.5mm outer, 1.1mm inner)",
           "Straight": 0,
-          "Angled": 0
+          "Angled": 'N/A'
         }
       ]
     },
@@ -1898,7 +1898,7 @@ var cableData = {
           "type": "Power Output",
           "model": "Barrel (3.5mm outer, 1.1mm inner)",
           "Straight": 0,
-          "Angled": 0
+          "Angled": 'N/A'
         }
       ]
     },
@@ -1917,7 +1917,7 @@ var cableData = {
           "type": "Power Output",
           "model": "Barrel (3.5mm outer, 1.1mm inner)",
           "Straight": 0,
-          "Angled": 0
+          "Angled": 'N/A'
         }
       ]
     },
@@ -1936,7 +1936,7 @@ var cableData = {
           "type": "Power Output",
           "model": "Barrel (3.5mm outer, 1.1mm inner)",
           "Straight": 0,
-          "Angled": 0
+          "Angled": 'N/A'
         }
       ]
     },
@@ -2024,7 +2024,7 @@ var cableData = {
           "type": "Power Output",
           "model": "Barrel (3.5mm outer, 1.1mm inner)",
           "Straight": 0,
-          "Angled": 0
+          "Angled": 'N/A'
         }
       ]
     },
@@ -2043,7 +2043,7 @@ var cableData = {
           "type": "Power Output",
           "model": "Barrel (3.5mm outer, 1.1mm inner)",
           "Straight": 0,
-          "Angled": 0
+          "Angled": 'N/A'
         }
       ]
     },
@@ -2192,7 +2192,7 @@ var cableData = {
           "type": "Power Input Connector",
           "model": "4 Pin Hirose RP (For SmallHD)",
           "Straight": 0,
-          "Angled": 0
+          "Angled": 'N/A'
         }
       ]
     },
@@ -2283,7 +2283,7 @@ var cableData = {
           "type": "Power Input Connector",
           "model": "nanoCON (For Convergent Design)",
           "Straight": 0,
-          "Angled": 0
+          "Angled": 'N/A'
         }
       ]
     },
@@ -2296,7 +2296,7 @@ var cableData = {
           "type": "Power Input Connector",
           "model": "nanoCON (For Convergent Design)",
           "Straight": 0,
-          "Angled": 0
+          "Angled": 'N/A'
         }
       ]
     },
@@ -2309,7 +2309,7 @@ var cableData = {
           "type": "Power Input Connector",
           "model": "nanoCON (For Convergent Design)",
           "Straight": 0,
-          "Angled": 0
+          "Angled": 'N/A'
         }
       ]
     },
@@ -2322,7 +2322,7 @@ var cableData = {
           "type": "Power Input Connector",
           "model": "nanoCON (For Convergent Design)",
           "Straight": 0,
-          "Angled": 0
+          "Angled": 'N/A'
         }
       ]
     },
@@ -2335,7 +2335,7 @@ var cableData = {
           "type": "Power Input Connector",
           "model": "4 Pin RP Hirose (For Convergent Design)",
           "Straight": 0,
-          "Angled": 0
+          "Angled": 'N/A'
         }
       ]
     },
@@ -2348,12 +2348,754 @@ var cableData = {
           "type": "Power Input Connector",
           "model": "4 Pin RP Hirose (For Convergent Design)",
           "Straight": 0,
-          "Angled": 0
+          "Angled": 'N/A'
         }
       ]
     },
   ],
   "connectorB": [
+    {
+      "type": "Monitor",
+      "Manufacturer": "SmallHD",
+      "Product": "1303HDR",
+      "Connector": [
+        {
+          "type": "Power Output",
+          "model": "2 Pin 0B Lemo",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "Monitor",
+      "Manufacturer": "SmallHD",
+      "Product": "1703 P3",
+      "Connector": [
+        {
+          "type": "Power Output",
+          "model": "2 Pin 0B Lemo",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "Monitor",
+      "Manufacturer": "SmallHD",
+      "Product": "1703 P3X",
+      "Connector": [
+        {
+          "type": "Power Output",
+          "model": "2 Pin 0B Lemo",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "Monitor",
+      "Manufacturer": "SmallHD",
+      "Product": "1303 HDR Bolt Sidekick",
+      "Connector": [
+        {
+          "type": "Power Output",
+          "model": "2 Pin 0B Lemo",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "Monitor",
+      "Manufacturer": "SmallHD",
+      "Product": "1703 P3X Bolt Sidekick",
+      "Connector": [
+        {
+          "type": "Power Output",
+          "model": "2 Pin 0B Lemo",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "Monitor",
+      "Manufacturer": "SmallHD",
+      "Product": "Cine 7 500 TX",
+      "Connector": [
+        {
+          "type": "Power Output",
+          "model": "2 Pin 0B Lemo",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "Monitor",
+      "Manufacturer": "SmallHD",
+      "Product": "Cine 7 500 RX",
+      "Connector": [
+        {
+          "type": "Power Output",
+          "model": "2 Pin 0B Lemo",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "Monitor",
+      "Manufacturer": "SmallHD",
+      "Product": "Cine 7 SK RX",
+      "Connector": [
+        {
+          "type": "Power Output",
+          "model": "2 Pin 0B Lemo",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "Monitor",
+      "Manufacturer": "SmallHD",
+      "Product": "FOCUS 7 Bolt 500 RX",
+      "Connector": [
+        {
+          "type": "Power Output",
+          "model": "Barrel (3.5mm outer, 1.1mm inner)",
+          "Straight": 0,
+          "Angled": 'N/A'
+        }
+      ]
+    },
+    {
+      "type": "Monitor",
+      "Manufacturer": "SmallHD",
+      "Product": "703 Bolt Wireless Monitor",
+      "Connector": [
+        {
+          "type": "Power Output",
+          "model": "2 Pin 0B Lemo (same conenctor, only one)",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "Monitor",
+      "Manufacturer": "SmallHD",
+      "Product": "FOCUS Bolt 500 RX",
+      "Connector": [
+        {
+          "type": "Power Output",
+          "model": "Barrel (3.5mm outer, 1.1mm inner)",
+          "Straight": 0,
+          "Angled": 'N/A'
+        }
+      ]
+    },
+    {
+      "type": "Monitor",
+      "Manufacturer": "SmallHD",
+      "Product": "FOCUS Bolt 500 TX",
+      "Connector": [
+        {
+          "type": "Power Output",
+          "model": "Barrel (3.5mm outer, 1.1mm inner)",
+          "Straight": 0,
+          "Angled": 'N/A'
+        }
+      ]
+    },
+    {
+      "type": "Monitor",
+      "Manufacturer": "SmallHD",
+      "Product": "FOCUS Bolt Sidekick RX",
+      "Connector": [
+        {
+          "type": "Power Output",
+          "model": "Barrel (3.5mm outer, 1.1mm inner)",
+          "Straight": 0,
+          "Angled": 'N/A'
+        }
+      ]
+    },
+    {
+      "type": "Monitor",
+      "Manufacturer": "SmallHD",
+      "Product": "Focus Pro",
+      "Connector": [
+        {
+          "type": "Power Output",
+          "model": "2 Pin 0B Lemo",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "Monitor",
+      "Manufacturer": "SmallHD",
+      "Product": "Focus Pro OLED",
+      "Connector": [
+        {
+          "type": "Power Output",
+          "model": "2 Pin 0B Lemo",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "Monitor",
+      "Manufacturer": "SmallHD",
+      "Product": "FOCUS",
+      "Connector": [
+        {
+          "type": "Power Output",
+          "model": "Barrel (3.5mm outer, 1.1mm inner)",
+          "Straight": 0,
+          "Angled": 'N/A'
+        }
+      ]
+    },
+    {
+      "type": "Monitor",
+      "Manufacturer": "SmallHD",
+      "Product": "FOCUS 7",
+      "Connector": [
+        {
+          "type": "Power Output",
+          "model": "Barrel (3.5mm outer, 1.1mm inner)",
+          "Straight": 0,
+          "Angled": 'N/A'
+        }
+      ]
+    },
+    {
+      "type": "Monitor",
+      "Manufacturer": "SmallHD",
+      "Product": "703 UltraBright",
+      "Connector": [
+        {
+          "type": "Power Output",
+          "model": "2 Pin 0B Lemo",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "Battery Plate",
+      "Manufacturer": "Blind Spot Gear",
+      "Product": "Power-junkie",
+      "Connector": [
+        {
+          "type": "Camera Connector",
+          "model": "2.1mm DC",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "Battery Plate",
+      "Manufacturer": "SmallRig",
+      "Product": "2698 NP-F Battery Adapter Plate",
+      "Connector": [
+        {
+          "type": "Camera Connector",
+          "model": "2.1mm DC",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "Battery Plate",
+      "Manufacturer": "SmallRig",
+      "Product": "2504 NP-F Battery Adapter Plate",
+      "Connector": [
+        {
+          "type": "Camera Connector",
+          "model": "2.1mm DC",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "Steadicam",
+      "Manufacturer": "Tiffen",
+      "Product": "M-1",
+      "Connector": [
+        {
+          "type": "Main Power Output",
+          "model": "3 Pin 2B Lemo (for Steadicam)",
+          "Straight": 0,
+          "Angled": 0
+        },
+        {
+          "type": "Second Output",
+          "model": "3 Pin 0B Lemo (for Steadicam)",
+          "Straight": 0,
+          "Angled": 0
+        },
+        {
+          "type": "Third Output",
+          "model": "D-Tap",
+          "Straight": 0,
+          "Angled": 'N/A'
+        }
+      ]
+    },
+    {
+      "type": "Steadicam",
+      "Manufacturer": "Tiffen",
+      "Product": "M-2",
+      "Connector": [
+        {
+          "type": "Main Power Output",
+          "model": "3 Pin 2B Lemo (for Steadicam)",
+          "Straight": 0,
+          "Angled": 0
+        },
+        {
+          "type": "Second Output",
+          "model": "3 Pin 0B Lemo (for Steadicam)",
+          "Straight": 0,
+          "Angled": 0
+        },
+        {
+          "type": "Third Output",
+          "model": "D-Tap",
+          "Straight": 0,
+          "Angled": 'N/A'
+        }
+      ]
+    },
+    {
+      "type": "Steadicam",
+      "Manufacturer": "Tiffen",
+      "Product": "Zephyr",
+      "Connector": [
+        {
+          "type": "Main Power Output",
+          "model": "3 Pin 2B Lemo (for Steadicam)",
+          "Straight": 0,
+          "Angled": 0
+        },
+        {
+          "type": "Second Output",
+          "model": "3 Pin 0B Lemo (for Steadicam)",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "Steadicam",
+      "Manufacturer": "Tiffen",
+      "Product": "Clipper 312 / 324",
+      "Connector": [
+        {
+          "type": "Main Power Output",
+          "model": "3 Pin 2B Lemo (for Steadicam)",
+          "Straight": 0,
+          "Angled": 0
+        },
+        {
+          "type": "Second Output",
+          "model": "3 Pin 0B Lemo (for Steadicam)",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "Steadicam",
+      "Manufacturer": "Tiffen",
+      "Product": "Ultra",
+      "Connector": [
+        {
+          "type": "Main Power Output",
+          "model": "3 Pin 2B Lemo (for Steadicam)",
+          "Straight": 0,
+          "Angled": 0
+        },
+        {
+          "type": "Second Output",
+          "model": "3 Pin 0B Lemo (for Steadicam)",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "Steadicam",
+      "Manufacturer": "Tiffen",
+      "Product": "Ultra 2",
+      "Connector": [
+        {
+          "type": "Main Power Output",
+          "model": "3 Pin 2B Lemo (for Steadicam)",
+          "Straight": 0,
+          "Angled": 0
+        },
+        {
+          "type": "Second Output",
+          "model": "3 Pin 0B Lemo (for Steadicam)",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "Steadicam",
+      "Manufacturer": "Tiffen",
+      "Product": "Clipper 2",
+      "Connector": [
+        {
+          "type": "Main Power Output",
+          "model": "3 Pin 2B Lemo (for Steadicam)",
+          "Straight": 0,
+          "Angled": 0
+        },
+        {
+          "type": "Second Output",
+          "model": "3 Pin 0B Lemo (for Steadicam)",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "Steadicam",
+      "Manufacturer": "Tiffen",
+      "Product": "Aero",
+      "Connector": [
+        {
+          "type": "Main Power Output",
+          "model": "P-Tap/D-Tap",
+          "Straight": 0,
+          "Angled": 'N/A'
+        },
+        {
+          "type": "Second Output",
+          "model": "3 Pin Mini XLR TA3F (for Tiffen Aero)",
+          "Straight": 0,
+          "Angled": 'N/A'
+        }
+      ]
+    },
+    {
+      "type": "Steadicam",
+      "Manufacturer": "Tiffen",
+      "Product": "Archer 2",
+      "Connector": [
+        {
+          "type": "Main Power Output",
+          "model": "3 Pin 2B Lemo (for Steadicam)",
+          "Straight": 0,
+          "Angled": 0
+        },
+        {
+          "type": "Second Output",
+          "model": "3 Pin 0B Lemo (for Steadicam)",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "Steadicam",
+      "Manufacturer": "Tiffen",
+      "Product": "Shadow",
+      "Connector": [
+        {
+          "type": "Main Power Output",
+          "model": "3 Pin 2B Lemo (for Steadicam)",
+          "Straight": 0,
+          "Angled": 0
+        },
+        {
+          "type": "Second Output",
+          "model": "3 Pin 0B Lemo (for Steadicam)",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "Steadicam",
+      "Manufacturer": "Tiffen",
+      "Product": "Flyer",
+      "Connector": [
+        {
+          "type": "Main Power Output",
+          "model": "3 Pin 2B Lemo (for Steadicam)",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "Steadicam",
+      "Manufacturer": "Tiffen",
+      "Product": "Flyer LE",
+      "Connector": [
+        {
+          "type": "Main Power Output",
+          "model": "3 Pin 2B Lemo (for Steadicam)",
+          "Straight": 0,
+          "Angled": 0
+        },
+        {
+          "type": "Second Output",
+          "model": "3 Pin 0B Lemo (for Steadicam)",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "Steadicam",
+      "Manufacturer": "Tiffen",
+      "Product": "Phantom V",
+      "Connector": [
+        {
+          "type": "Main Power Output",
+          "model": "3 Pin 2B Lemo (for Steadicam)",
+          "Straight": 0,
+          "Angled": 0
+        },
+        {
+          "type": "Second Output",
+          "model": "3 Pin 0B Lemo (for Steadicam)",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "Steadicam",
+      "Manufacturer": "Arri",
+      "Product": "Artemis",
+      "Connector": [
+        {
+          "type": "Main Power Output",
+          "model": "3 Pin 1S Lemo, (for Arri)",
+          "Straight": 0,
+          "Angled": 0
+        },
+        {
+          "type": "Second Output",
+          "model": "1B.304 Lemo (12v) (for Arri)",
+          "Straight": 0,
+          "Angled": 0
+        },
+        {
+          "type": "Third Output",
+          "model": "2 Pin 0B Lemo",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "Steadicam",
+      "Manufacturer": "Arri",
+      "Product": "Trinity",
+      "Connector": [
+        {
+          "type": "Main Power Output",
+          "model": "1B.304 Lemo (12v) (for Arri)",
+          "Straight": 0,
+          "Angled": 0
+        },
+        {
+          "type": "Second Output",
+          "model": "0S 304 Lemo (Focus & Tally)",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "Steadicam",
+      "Manufacturer": "Arri",
+      "Product": "Maxima",
+      "Connector": [
+        {
+          "type": "Main Power Output",
+          "model": "1B.304 Lemo (12v) (for Arri)",
+          "Straight": 0,
+          "Angled": 0
+        },
+        {
+          "type": "Second Output",
+          "model": "0S 304 Lemo (Focus)",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "Steadicam",
+      "Manufacturer": "Arri",
+      "Product": "SRH-3",
+      "Connector": [
+        {
+          "type": "Main Power Output",
+          "model": "3 Pin 1S Lemo, (for Arri)",
+          "Straight": 0,
+          "Angled": 0
+        },
+        {
+          "type": "Second Output",
+          "model": "1B.304 Lemo (12v) (for Arri)",
+          "Straight": 0,
+          "Angled": 0
+        },
+        {
+          "type": "Third Output",
+          "model": "2 Pin 0B Lemo",
+          "Straight": 0,
+          "Angled": 0
+        },
+        {
+          "type": "Forth Output",
+          "model": "3 Pin Fischer RS, 24v (for Arri) ",
+          "Straight": 0,
+          "Angled": 'N/A'
+        }
+      ]
+    },
+    {
+      "type": "Steadicam",
+      "Manufacturer": "Arri",
+      "Product": "SRH-360",
+      "Connector": [
+        {
+          "type": "Main Power Output",
+          "model": "3 Pin 1S Lemo, (for Arri)",
+          "Straight": 0,
+          "Angled": 0
+        },
+        {
+          "type": "Second Output",
+          "model": "1B.304 Lemo (12v) (for Arri)",
+          "Straight": 0,
+          "Angled": 0
+        },
+        {
+          "type": "Third Output",
+          "model": "2 Pin 0B Lemo",
+          "Straight": 0,
+          "Angled": 0
+        },
+        {
+          "type": "Forth Output",
+          "model": "3 Pin Fischer RS, 24v (for Arri) ",
+          "Straight": 0,
+          "Angled": 'N/A'
+        }
+      ]
+    },
+    {
+      "type": "Steadicam",
+      "Manufacturer": "GPI Pro Systems",
+      "Product": "Cinema HD",
+      "Connector": [
+        {
+          "type": "Main Power Output",
+          "model": "3 Pin 1S Lemo, (for Arri)",
+          "Straight": 0,
+          "Angled": 0
+        },
+        {
+          "type": "Second Output",
+          "model": "1S.302 Lemo (for GPI Pro)",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "Steadicam",
+      "Manufacturer": "GPI Pro Systems",
+      "Product": "Cine Live UJB-DHD",
+      "Connector": [
+        {
+          "type": "Main Power Output",
+          "model": "3 Pin 2B Lemo (for Steadicam)",
+          "Straight": 0,
+          "Angled": 0
+        },
+        {
+          "type": "Second Output",
+          "model": "3 Pin 0B Lemo (for Steadicam)",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "Steadicam",
+      "Manufacturer": "Glidecam",
+      "Product": "Glidecam X-45",
+      "Connector": [
+        {
+          "type": "Main Power Output",
+          "model": "2 Pin 1B Lemo (for Glidecam)",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "Steadicam",
+      "Manufacturer": "Glidecam",
+      "Product": "Glidecam X-30",
+      "Connector": [
+        {
+          "type": "Main Power Output",
+          "model": "2 Pin 1B Lemo (for Glidecam)",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+    {
+      "type": "Steadicam",
+      "Manufacturer": "Glidecam",
+      "Product": "Glidecam Gold Sled",
+      "Connector": [
+        {
+          "type": "Main Power Output",
+          "model": "3 Pin 2B Lemo (for Steadicam)",
+          "Straight": 0,
+          "Angled": 0
+        },
+        {
+          "type": "Second Output",
+          "model": "2 Pin 1B Lemo (for Glidecam)",
+          "Straight": 0,
+          "Angled": 0
+        },
+        {
+          "type": "Third Output",
+          "model": "2 Pin 0B Lemo",
+          "Straight": 0,
+          "Angled": 0
+        }
+      ]
+    },
+  ],
+  "connectorBB": [
     {
       "type": "Camera Stabaliser",
       "Manufacturer": "Tiffen",
@@ -2496,7 +3238,7 @@ var cableData = {
           "type": "Camera Connector",
           "model": "P-Tap/D-Tap",
           "Straight": 0,
-          "Angled": 0
+          "Angled": 'N/A'
         },
         {
           "type": "Stage Power Outputs",
