@@ -32,7 +32,7 @@ const filterData = function() {
 }
 
 const lower = function (str){
-    return str.toUpperCase();
+    return str.toLowerCase();
 }
 
 const getProductId = function(productName) {
@@ -61,7 +61,7 @@ const getProductHtml = function() {
                 <input type="radio" name="products" id="${productId}" class="choose-product purpose-radio-input" value="${item.Product}" ${checked}>
                 <label for="${productId}" class="purpose-radio-label">
                 <span class="label-icon">
-                  <img src="assets/device-images/${bdi.deviceType}/${bdi.manufacturer}/${deviceImageName}" alt="no-Image" class="select-img">
+                  <img src="assets/device-images/${lower(bdi.deviceType)}/${lower(bdi.manufacturer)}/${deviceImageName}" alt="no-Image" class="select-img">
                 </span>
                 <span class="label-text">${item.Product}</span>
                 </label>
@@ -88,9 +88,9 @@ const getPowerProductHtml = function() {
         let imagePath = '';
 
         if(bdi.powerType === 'monitor') {
-            imagePath = `assets/device-images/monitor/${bdi.powerManufacturer}/${deviceImageName}`;
+            imagePath = `assets/device-images/monitor/${lower(bdi.powerManufacturer)}/${deviceImageName}`;
         } else {
-            imagePath = `assets/device-images/power/${bdi.powerManufacturer}/${deviceImageName}`;
+            imagePath = `assets/device-images/power/${lower(bdi.powerManufacturer)}/${deviceImageName}`;
         }
         const productId = getProductId(item.Product);
         const checked = (inx === 0) ? 'checked': '';
