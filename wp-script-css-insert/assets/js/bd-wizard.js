@@ -19,11 +19,13 @@ var filteredDataA = [], filteredDataB = [];
 const filterData = function() {
     filteredDataA = [];
     filteredDataB = [];
-    cableData.forEach(item => {
-        if (item.category ==='ConnectorA' && lower(item.type) === lower(bdi.deviceType) && lower(item.manufacturer) === lower(bdi.manufacturer)) {
+    cableData.connectorA.forEach(item => {
+        if (lower(item.type) === lower(bdi.deviceType) && lower(item.Manufacturer) === lower(bdi.manufacturer)) {
             filteredDataA.push(item);
         }
-        if (item.category ==='ConnectorB' && lower(item.type) === lower(bdi.powerType) && lower(item.manufacturer) === lower(bdi.powerManufacturer)) {
+    });
+    cableData.connectorB.forEach(item => {
+        if (lower(item.type) === lower(bdi.powerType) && lower(item.Manufacturer) === lower(bdi.powerManufacturer)) {
             filteredDataB.push(item);
         }
     });
@@ -38,7 +40,7 @@ const getProductId = function(productName) {
 }
 
 const fixFileName = function (productName) {
-    return productName.replaceAll("+", "-").replaceAll(":", "-").replaceAll("/", "-").toLowerCase();
+    return productName.replace("+", "-").replace(":", "-").replace("/", "-").toLowerCase();
 }
 
 const getProductHtml = function() {
@@ -48,20 +50,20 @@ const getProductHtml = function() {
         <div class="purpose-radios-wrapper">
     `;
     filteredDataA.forEach((item, inx) => {
-        let deviceImageName = `${fixFileName(item.product)}.png`;
-        const productId = getProductId(item.product);
+        let deviceImageName = `${fixFileName(item.Product)}.png`;
+        const productId = getProductId(item.Product);
         const checked = (inx === 0) ? 'checked': '';
         if(inx === 0) {
-            bdi.product = item.product;
+            bdi.product = item.Product;
         }
         body += `
             <div class="purpose-radio">
-                <input type="radio" name="products" id="${productId}" class="choose-product purpose-radio-input" value="${item.product}" ${checked}>
+                <input type="radio" name="products" id="${productId}" class="choose-product purpose-radio-input" value="${item.Product}" ${checked}>
                 <label for="${productId}" class="purpose-radio-label">
                 <span class="label-icon">
-                  <img src="assets/images/device-${lower(bdi.deviceType)}-${lower(bdi.manufacturer)}-${deviceImageName}" alt="no-Image" class="select-img">
+                  <img src="assets/device-images/${lower(bdi.deviceType)}/${lower(bdi.manufacturer)}/${deviceImageName}" alt="no-Image" class="select-img">
                 </span>
-                <span class="label-text">${item.product}</span>
+                <span class="label-text">${item.Product}</span>
                 </label>
             </div>
         `;
@@ -82,27 +84,27 @@ const getPowerProductHtml = function() {
     `;
 
     filteredDataB.forEach((item, inx) => {
-        let deviceImageName = `${fixFileName(item.product)}.png`;
+        let deviceImageName = `${fixFileName(item.Product)}.png`;
         let imagePath = '';
 
         if(bdi.powerType === 'monitor') {
-            imagePath = `assets/images/device-monitor-${lower(bdi.powerManufacturer)}-${deviceImageName}`;
+            imagePath = `assets/device-images/monitor/${lower(bdi.powerManufacturer)}/${deviceImageName}`;
         } else {
-            imagePath = `assets/images/device-power-${lower(bdi.powerManufacturer)}-${deviceImageName}`;
+            imagePath = `assets/device-images/power/${lower(bdi.powerManufacturer)}/${deviceImageName}`;
         }
-        const productId = getProductId(item.product);
+        const productId = getProductId(item.Product);
         const checked = (inx === 0) ? 'checked': '';
         if(inx === 0) {
-            bdi.powerProduct = item.product;
+            bdi.powerProduct = item.Product;
         }
         body += `
             <div class="purpose-radio">
-                <input type="radio" name="products" id="${productId}" class="choose-powerProduct purpose-radio-input" value="${item.product}" ${checked}>
+                <input type="radio" name="products" id="${productId}" class="choose-powerProduct purpose-radio-input" value="${item.Product}" ${checked}>
                 <label for="${productId}" class="purpose-radio-label">
                 <span class="label-icon">
                   <img src="${imagePath}" alt="no-Image" class="select-img">
                 </span>
-                <span class="label-text">${item.product}</span>
+                <span class="label-text">${item.Product}</span>
                 </label>
             </div>
         `;
@@ -124,7 +126,7 @@ const getFinishHtml = function() {
         <div class="purpose-radio">
             <label class="purpose-radio-label">
             <span class="label-icon">
-                <img src="assets/images/04-connector-01-Straight Lemo.png" alt="branding" class="select-img">
+                <img src="assets/images/04-connector/01-Straight Lemo.png" alt="branding" class="select-img">
             </span>
             <span class="label-text">${bdi.connectorAModel}</span>
             </label>
@@ -135,7 +137,7 @@ const getFinishHtml = function() {
         <div class="purpose-radio">
             <label class="purpose-radio-label">
             <span class="label-icon">
-                <img src="assets/images/04-connector-02-Angled Lemo.png" alt="branding" class="select-img">
+                <img src="assets/images/04-connector/02-Angled Lemo.png" alt="branding" class="select-img">
             </span>
             <span class="label-text">${bdi.connectorAModel}</span>
             </label>
@@ -148,7 +150,7 @@ const getFinishHtml = function() {
         <div class="purpose-radio">
             <label class="purpose-radio-label">
             <span class="label-icon">
-                <img src="assets/images/09-type of cable would you like-01-Short Coiled 45cm to 90cm.png" alt="branding" class="select-img">
+                <img src="assets/images/09-type of cable would you like/01-Short Coiled 45cm to 90cm.png" alt="branding" class="select-img">
             </span>
             <span class="label-text">Short Coiled<br>45cm to 90cm</span>
             </label>
@@ -159,7 +161,7 @@ const getFinishHtml = function() {
         <div class="purpose-radio">
             <label class="purpose-radio-label">
             <span class="label-icon">
-                <img src="assets/images/09-type of cable would you like-02-Straight Cable.png" alt="branding" class="select-img">
+                <img src="assets/images/09-type of cable would you like/02-Straight Cable.png" alt="branding" class="select-img">
             </span>
             <span class="label-text">Straight Cable <br> ${bdi.cableLength}cm</span>
             </label>
@@ -170,7 +172,7 @@ const getFinishHtml = function() {
         <div class="purpose-radio">
             <label class="purpose-radio-label">
             <span class="label-icon">
-                <img src="assets/images/09-type of cable would you like-03-Long coiled 0.9m to 2.5m.png" alt="branding" class="select-img">
+                <img src="assets/images/09-type of cable would you like/03-Long coiled 0.9m to 2.5m.png" alt="branding" class="select-img">
             </span>
             <span class="label-text">Long coiled<br>0.9m to 2.5m</span>
             </label>
@@ -183,7 +185,7 @@ const getFinishHtml = function() {
         <div class="purpose-radio">
             <label class="purpose-radio-label">
             <span class="label-icon">
-                <img src="assets/images/08-connector 3Pin2B Lemo-03-Straight Lemo.png" alt="branding" class="select-img">
+                <img src="assets/images/08-connector 3Pin2B Lemo/03-Straight Lemo.png" alt="branding" class="select-img">
             </span>
             <span class="label-text">${bdi.connectorBModel}</span>
             </label>
@@ -194,7 +196,7 @@ const getFinishHtml = function() {
         <div class="purpose-radio">
             <label class="purpose-radio-label">
             <span class="label-icon">
-                <img src="assets/images/08-connector 3Pin2B Lemo-04-Angled Lemo.png" alt="branding" class="select-img">
+                <img src="assets/images/08-connector 3Pin2B Lemo/04-Angled Lemo.png" alt="branding" class="select-img">
             </span>
             <span class="label-text">${bdi.connectorBModel}</span>
             </label>
@@ -236,9 +238,9 @@ var steps = $("#wizard").steps({
             let isThereAngled = true;
 
             filteredDataA.forEach(item => {
-                if (item.product === bdi.product) {
-                    bdi.connectorAModel = item.connector_model1;
-                    if(item.connector_angled1 === 'N/A') isThereAngled = false;
+                if (item.Product === bdi.product) {
+                    bdi.connectorAModel = item.Connector[0].model;
+                    if(item.Connector[0].Angled === 'N/A') isThereAngled = false;
                 }
             })
             $("#connectorA-type").text(`It’s an ${bdi.connectorAModel}`);
@@ -271,9 +273,9 @@ var steps = $("#wizard").steps({
             let isThereAngled = true;
             
             filteredDataB.forEach(item => {
-                if (item.product === bdi.powerProduct) {
-                    bdi.connectorBModel = item.connector_model1;
-                    if(item.connector_angled1 === 'N/A') isThereAngled = false;
+                if (item.Product === bdi.powerProduct) {
+                    bdi.connectorBModel = item.Connector[0].model;
+                    if(item.Connector[0].Angled === 'N/A') isThereAngled = false;
                 }
             })
             $("#connectorB-type").text(`It’s an ${bdi.connectorBModel}`);
@@ -293,7 +295,7 @@ var steps = $("#wizard").steps({
         if (newIndex === 9) { // finish
             $(`#${idStr}`).html(getFinishHtml());
         }
-        
+        console.log(bdi)
         return true;
     },
     onStepChanged: function (event, currentIndex, priorIndex) {
@@ -312,12 +314,12 @@ var steps = $("#wizard").steps({
     },
     onFinishing: function (event, currentIndex)
     {
-        
+        console.log(event, currentIndex)
         return true;
     },
     onFinished: function (event, currentIndex)
     {
-        
+        console.log(event, currentIndex)
         return true;
     }
 });
@@ -334,6 +336,7 @@ $('.choose-manufacturer').on('change', function(e) {
 
 $('.choose-connectorA').on('change', function(e) {
     bdi.connectorA = e.target.value;
+    console.log(bdi.connectorA)
 });
 $('.choose-power').on('change', function(e) {
     bdi.powerType = e.target.value;
@@ -350,4 +353,3 @@ $('.choose-cableType').on('change', function(e) {
 $('#select-cable-length').on('change', function(e) {
     bdi.cableLength = e.target.value;
 });
-

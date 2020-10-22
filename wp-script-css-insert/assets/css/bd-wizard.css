@@ -1,14 +1,6 @@
 body {
   font-family: 'Karla', sans-serif;
 }
-*, ::after, ::before {
-  box-sizing: border-box;
-}
-.clearfix::after {
-  display: block;
-  clear: both;
-  content: "";
-}
 .navbar-light {
   border-bottom: solid 1px #e9ecf4;
 }
@@ -147,7 +139,6 @@ main {
 .wizard .content .purpose-radio .purpose-radio-label img.select-img{
   max-width: 100%;
   max-height: 130px;
-  vertical-align: middle;
 }
 @media (max-width: 575px) {
   .wizard .content .purpose-radio .purpose-radio-label {
