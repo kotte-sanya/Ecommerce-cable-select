@@ -12,7 +12,8 @@ var bdi = {
     connectorBPrice: '',
     connectorBModel:'',
     cableType:'short-coiled',
-    cableLength: 30
+    cableLength: 30,
+    deviceA:{}, deviceB:{}
 }
 var filteredDataA = [], filteredDataB = [];
 
@@ -118,6 +119,7 @@ const getFinishHtml = function() {
         <h2 class="section-heading mb-5">Your Finished Cable</h2>
         <div class="purpose-radios-wrapper">
     `;
+    let totalPrice = Number(bdi.connectorAPrice) + Number(bdi.connectorBPrice);
 
     if (bdi.connectorA === 'straight') {
         body += `
@@ -154,6 +156,7 @@ const getFinishHtml = function() {
             </label>
         </div>
         `;
+        totalPrice += Number(cablePrice[0].price);
     } else if(bdi.cableType === 'straight-cable'){
         body += `
         <div class="purpose-radio">
@@ -165,6 +168,7 @@ const getFinishHtml = function() {
             </label>
         </div>
         `
+        totalPrice += Number(cablePrice[1].price) * Number(bdi.cableLength);
     } else {
         body += `
         <div class="purpose-radio">
@@ -176,6 +180,7 @@ const getFinishHtml = function() {
             </label>
         </div>
         `
+        totalPrice += Number(cablePrice[2].price);
     }
 
     if (bdi.connectorB === 'straight2') {
@@ -203,7 +208,7 @@ const getFinishHtml = function() {
     }
     body += `
         </div>
-        <h2 class="section-heading mt-5">Total Cost - £160</h2>
+        <h2 class="section-heading mt-5">Total Cost - £${totalPrice}</h2>
         <div style="text-align: center;"><button type="button" class="btn btn-warning btn-lg">Add to Cart <i class='fas fa-shopping-cart'></i></button></div>
     `;
 
@@ -237,6 +242,8 @@ var steps = $("#wizard").steps({
 
             filteredDataA.forEach(item => {
                 if (item.product === bdi.product) {
+                    bdi.deviceA = item;
+                    bdi.connectorAPrice = item.connector_straight1;
                     bdi.connectorAModel = item.connector_model1;
                     if(item.connector_angled1 === 'N/A') isThereAngled = false;
                 }
@@ -272,6 +279,8 @@ var steps = $("#wizard").steps({
             
             filteredDataB.forEach(item => {
                 if (item.product === bdi.powerProduct) {
+                    bdi.deviceB = item;
+                    bdi.connectorBPrice = item.connector_straight1;
                     bdi.connectorBModel = item.connector_model1;
                     if(item.connector_angled1 === 'N/A') isThereAngled = false;
                 }
@@ -293,7 +302,6 @@ var steps = $("#wizard").steps({
         if (newIndex === 9) { // finish
             $(`#${idStr}`).html(getFinishHtml());
         }
-        
         return true;
     },
     onStepChanged: function (event, currentIndex, priorIndex) {
@@ -334,6 +342,7 @@ $('.choose-manufacturer').on('change', function(e) {
 
 $('.choose-connectorA').on('change', function(e) {
     bdi.connectorA = e.target.value;
+    bdi.connectorAPrice = (e.target.value === 'straight') ? bdi.deviceA.connector_straight1 :  bdi.deviceA.connector_angled1;
 });
 $('.choose-power').on('change', function(e) {
     bdi.powerType = e.target.value;
@@ -343,6 +352,7 @@ $('.choose-powerManufacturer').on('change', function(e) {
 });
 $('.choose-connectB').on('change', function(e) {
     bdi.connectorB = e.target.value;
+    bdi.connectorBPrice = (e.target.value === 'straight2') ? bdi.deviceB.connector_straight1 :  bdi.deviceB.connector_angled1;
 });
 $('.choose-cableType').on('change', function(e) {
     bdi.cableType = e.target.value;

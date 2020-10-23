@@ -4783,4 +4783,22 @@ var cableData = [
     "connector_straight4": "",
     "connector_angled4": ""
   }
-]
+];
+
+var cablePrice = [
+  {
+    id:1,
+    type:'short-coiled',
+    price: 50
+  },
+  {
+    id:2,
+    type: 'straight-cable',
+    price: 10
+  },
+  {
+    id:3,
+    type:'long-coiled',
+    price: 100
+  }
+];
