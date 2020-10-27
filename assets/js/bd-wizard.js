@@ -119,7 +119,7 @@ const getFinishHtml = function() {
         <h2 class="section-heading mb-5">Your Finished Cable</h2>
         <div class="purpose-radios-wrapper">
     `;
-    let totalPrice = Number(bdi.connectorAPrice) + Number(bdi.connectorBPrice);
+    let totalPrice = Number(bdi.connectorAPrice);
 
     if (bdi.connectorA === 'straight') {
         body += `
@@ -183,28 +183,31 @@ const getFinishHtml = function() {
         totalPrice += Number(cablePrice[2].price);
     }
 
-    if (bdi.connectorB === 'straight2') {
-        body += `
-        <div class="purpose-radio">
-            <label class="purpose-radio-label">
-            <span class="label-icon">
-                <img src="assets/images/08-connector 3Pin2B Lemo-03-Straight Lemo.png" alt="branding" class="select-img">
-            </span>
-            <span class="label-text">${bdi.connectorBModel}</span>
-            </label>
-        </div>
-        `;
-    } else {
-        body += `
-        <div class="purpose-radio">
-            <label class="purpose-radio-label">
-            <span class="label-icon">
-                <img src="assets/images/08-connector 3Pin2B Lemo-04-Angled Lemo.png" alt="branding" class="select-img">
-            </span>
-            <span class="label-text">${bdi.connectorBModel}</span>
-            </label>
-        </div>
-        `
+    if(bdi.powerType !== 'd-tap'){
+        totalPrice += Number(bdi.connectorBPrice);
+        if (bdi.connectorB === 'straight2') {
+            body += `
+            <div class="purpose-radio">
+                <label class="purpose-radio-label">
+                <span class="label-icon">
+                    <img src="assets/images/08-connector 3Pin2B Lemo-03-Straight Lemo.png" alt="branding" class="select-img">
+                </span>
+                <span class="label-text">${bdi.connectorBModel}</span>
+                </label>
+            </div>
+            `;
+        } else {
+            body += `
+            <div class="purpose-radio">
+                <label class="purpose-radio-label">
+                <span class="label-icon">
+                    <img src="assets/images/08-connector 3Pin2B Lemo-04-Angled Lemo.png" alt="branding" class="select-img">
+                </span>
+                <span class="label-text">${bdi.connectorBModel}</span>
+                </label>
+            </div>
+            `
+        }
     }
     body += `
         </div>
@@ -214,6 +217,7 @@ const getFinishHtml = function() {
 
     return body;
 }
+var form = $("#wizard");
 
 var steps = $("#wizard").steps({
     headerTag: "h3",
@@ -264,9 +268,11 @@ var steps = $("#wizard").steps({
 
         }
         if (newIndex === 5) { // select power manufacturer
-
+            if(bdi.powerType === 'd-tap') return true;
         }
         if (newIndex === 6) { // select power product
+            if(bdi.powerType === 'd-tap') return true;
+
             $(`#${idStr}`).html(getPowerProductHtml());
 
             $('.choose-powerProduct').on('change', function(e) {
@@ -275,6 +281,8 @@ var steps = $("#wizard").steps({
             if(filteredDataB.length === 0)  {alert("There are no matched devices. Try again."); return false};
         }
         if (newIndex === 7) { // select connectorB
+            if(bdi.powerType === 'd-tap') return true;
+
             let isThereAngled = true;
             
             filteredDataB.forEach(item => {
@@ -297,7 +305,11 @@ var steps = $("#wizard").steps({
             }
         }
         if (newIndex === 8) { // select cable
-
+            if(bdi.cableType == 'straight-cable'){
+                $('#select-cable-length').prop('disabled', false);
+            }else{
+              $('#select-cable-length').prop('disabled', 'disabled');
+            }
         }
         if (newIndex === 9) { // finish
             $(`#${idStr}`).html(getFinishHtml());
@@ -314,6 +326,16 @@ var steps = $("#wizard").steps({
                 }
             })
             // $($theSteps).next('li').removeClass('done')._enableAria(false);
+        }
+        if(currentIndex > 4 && currentIndex < 8 && bdi.powerType === 'd-tap') form.steps("next");
+
+        if(bdi.powerType === 'd-tap'){
+            $theSteps = $('.steps ul').find('.current');
+            $($theSteps).parent().children().each((i, d) => {
+                if (i > 4 && i < 8) {
+                    $(d).removeClass('done')._enableAria(false)
+                }
+            })
         }
         
         return true;
@@ -356,6 +378,11 @@ $('.choose-connectB').on('change', function(e) {
 });
 $('.choose-cableType').on('change', function(e) {
     bdi.cableType = e.target.value;
+    if(e.target.value == 'straight-cable'){
+        $('#select-cable-length').prop('disabled', false);
+    }else{
+      $('#select-cable-length').prop('disabled', 'disabled');
+    }
 });
 $('#select-cable-length').on('change', function(e) {
     bdi.cableLength = e.target.value;
