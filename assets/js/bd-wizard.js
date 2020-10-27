@@ -230,9 +230,11 @@ var steps = $("#wizard").steps({
         const idStr = `wizard-p-${newIndex}`;
         
         if (newIndex === 1) { // select manufacturer
+            contentHideShow(true);
             $("#step2-title").text(`It is a ${bdi.deviceType} made by….`);
         }
         if (newIndex === 2) { // select product
+            contentHideShow(true);
             $("#step3-title").text(`The ${bdi.deviceType} is a…`);
             $(`#${idStr}`).html(getProductHtml());
             
@@ -242,6 +244,7 @@ var steps = $("#wizard").steps({
             if(filteredDataA.length === 0) {alert("There are no matched devices. Try again.");return false};
         }
         if (newIndex === 3) { // select connectorA
+            contentHideShow(true);
             let isThereAngled = true;
 
             filteredDataA.forEach(item => {
@@ -265,13 +268,22 @@ var steps = $("#wizard").steps({
             }
         }
         if (newIndex === 4) { // select powerType
+            contentHideShow(true);
 
         }
         if (newIndex === 5) { // select power manufacturer
-            if(bdi.powerType === 'd-tap') return true;
+            if(bdi.powerType === 'd-tap') {
+                contentHideShow(false);
+                return true;
+            }
+            contentHideShow(true);
         }
         if (newIndex === 6) { // select power product
-            if(bdi.powerType === 'd-tap') return true;
+            if(bdi.powerType === 'd-tap') {
+                contentHideShow(false);
+                return true;
+            }
+            contentHideShow(true);
 
             $(`#${idStr}`).html(getPowerProductHtml());
 
@@ -281,7 +293,11 @@ var steps = $("#wizard").steps({
             if(filteredDataB.length === 0)  {alert("There are no matched devices. Try again."); return false};
         }
         if (newIndex === 7) { // select connectorB
-            if(bdi.powerType === 'd-tap') return true;
+            if(bdi.powerType === 'd-tap') {
+                contentHideShow(false);
+                return true;
+            }
+            contentHideShow(true);
 
             let isThereAngled = true;
             
@@ -305,6 +321,7 @@ var steps = $("#wizard").steps({
             }
         }
         if (newIndex === 8) { // select cable
+            setTimeout(()=>contentHideShow(true), 500);
             if(bdi.cableType == 'straight-cable'){
                 $('#select-cable-length').prop('disabled', false);
             }else{
@@ -312,6 +329,7 @@ var steps = $("#wizard").steps({
             }
         }
         if (newIndex === 9) { // finish
+            contentHideShow(true);
             $(`#${idStr}`).html(getFinishHtml());
         }
         return true;
@@ -351,6 +369,16 @@ var steps = $("#wizard").steps({
         return true;
     }
 });
+
+var contentHideShow = function(isShow){
+    if(isShow){
+        $('#wizard .content').show();
+        $('#wizard .actions').show();
+    }else{
+        $('#wizard .content').hide();
+        $('#wizard .actions').hide();
+    }
+}
 
 
 $('.choose-device').on('change', function(e) {
