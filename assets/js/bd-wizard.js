@@ -13,7 +13,8 @@ var bdi = {
     connectorBModel:'',
     cableType:'short-coiled',
     cableLength: 30,
-    deviceA:{}, deviceB:{}
+    deviceA:{}, deviceB:{},
+    dTapConnectorPrice: 10
 }
 var filteredDataA = [], filteredDataB = [];
 
@@ -183,7 +184,19 @@ const getFinishHtml = function() {
         totalPrice += Number(cablePrice[2].price);
     }
 
-    if(bdi.powerType !== 'd-tap'){
+    if(bdi.powerType === 'd-tap'){
+        totalPrice += Number(bdi.dTapConnectorPrice);
+        body += `
+        <div class="purpose-radio">
+            <label class="purpose-radio-label">
+            <span class="label-icon">
+                <img src="assets/images/d-tap-connector.png" alt="branding" class="select-img">
+            </span>
+            <span class="label-text">D-Tap Connector</span>
+            </label>
+        </div>
+        `;
+    }else{
         totalPrice += Number(bdi.connectorBPrice);
         if (bdi.connectorB === 'straight2') {
             body += `
