@@ -31,6 +31,18 @@ const filterData = function() {
     });
 }
 
+const getManufacturer = function (category) {
+    const result = []
+    const type = (lower(category) === lower('ConnectorA')) ? lower(bdi.deviceType): lower(bdi.powerType);
+
+    cableData.forEach((item) => {
+        if( lower(category) === lower(item.category) && type === lower(item.type)) {
+            if(result.indexOf(item.manufacturer) === -1) result.push(lower(item.manufacturer))
+        }
+    })
+    return result;
+}
+
 const lower = function (str){
     return str.toLowerCase();
 }
@@ -245,6 +257,16 @@ var steps = $("#wizard").steps({
         if (newIndex === 1) { // select manufacturer
             contentHideShow(true);
             $("#step2-title").text(`It is a ${bdi.deviceType} made by….`);
+            const manufacturerList = getManufacturer('connectorA');
+
+            if(manufacturerList.length === 0){alert("There are no matched devices. Try again.");return false};
+            
+            $(`#${idStr}`).find('input').parent().show();
+
+            $(`#${idStr}`).find('input').each((i,d) => {
+                const val = $(d).attr('value');
+                if(manufacturerList.indexOf(lower(val)) === -1) $(d).parent().hide()
+            })
         }
         if (newIndex === 2) { // select product
             contentHideShow(true);
@@ -290,6 +312,17 @@ var steps = $("#wizard").steps({
                 return true;
             }
             contentHideShow(true);
+
+            const manufacturerList = getManufacturer('connectorB');
+
+            if(manufacturerList.length === 0){alert("There are no matched devices. Try again.");return false};
+            
+            $(`#${idStr}`).find('input').parent().show();
+
+            $(`#${idStr}`).find('input').each((i,d) => {
+                const val = $(d).attr('value');
+                if(manufacturerList.indexOf(lower(val)) === -1) $(d).parent().hide()
+            })
         }
         if (newIndex === 6) { // select power product
             if(bdi.powerType === 'd-tap') {
